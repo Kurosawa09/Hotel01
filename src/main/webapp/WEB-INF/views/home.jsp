@@ -42,7 +42,7 @@
 								</ul>
 							</li>
 							<li><a href="/member/logout">logout</a></li>
-							<li><a href="/member/login" class="button primary">Sign Up</a></li>
+							<li><a href="/member/join" class="button primary">Sign Up</a></li>
 						</ul>
 					</nav>
 				</header>
