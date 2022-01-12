@@ -1,4 +1,4 @@
- <html>
+ <!-- <html>
 <head>
 <meta charset="UTF-8">
 <title>로그인</title>
@@ -30,9 +30,9 @@
 </body>
 </html>
 
+ -->
 
-
-<%-- <%@ page language="java" contentType="text/html; charset=UTF-8"
+<%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -73,7 +73,7 @@
 					</nav>
 				</header>
 			<!-- Banner -->
-   <form action="index.html" method="post" class="loginForm">
+   <form action="/member/login" method="post" class="loginForm">
       <h2 style="color:black;">Login</h2>
       <div class="idForm">
         <input type="text" class="id" placeholder="ID">
@@ -81,39 +81,13 @@
       <div class="passForm">
         <input type="password" class="pw" placeholder="PW">
       </div>
-      <button type="button" class="btn" onclick="button()">
-        LOG IN
+      <button type="submit" class="btn">
+        LOG INdddddd
       </button>
-      <script>
-      	let button = () => {
-        	alert('login Button !')
-        }
-      </script>
+ 
       <div class="bottomText">
         Don't you have ID? <a href="/member/join">sign up</a>
       </div>
     </form>
 </body>				
-<!--   <body>
-    <form action="index.html" method="post" class="loginForm">
-      <h2>Login</h2>
-      <div class="idForm">
-        <input type="text" class="id" placeholder="ID">
-      </div>
-      <div class="passForm">
-        <input type="password" class="pw" placeholder="PW">
-      </div>
-      <button type="button" class="btn" onclick="button()">
-        LOG IN
-      </button>
-      <script>
-      	let button = () => {
-        	alert('login Button !')
-        }
-      </script>
-      <div class="bottomText">
-        Don't you have ID? <a href="#">sign up</a>
-      </div>
-    </form>
-  </body> -->
-</html> --%>
+</html> 
