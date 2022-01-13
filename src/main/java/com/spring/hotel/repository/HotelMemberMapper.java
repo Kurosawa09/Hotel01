@@ -8,4 +8,6 @@ public interface HotelMemberMapper {
 
 	String selectMember(HotelMemberVO loginMember);		// 로그인
 
+	String idChk(String idChk);
+
 }
