@@ -70,7 +70,7 @@ public class HotelMemberController {
 		String returnUrl = null;
 		if(loginNm == null) {
 			logger.info("로그인 실패");
-			returnUrl = "redirect:/";
+			returnUrl = "redirect:/member/login";
 		}else {
 			logger.info("로그인 성공");
 			session.setAttribute("memberId", memberId);

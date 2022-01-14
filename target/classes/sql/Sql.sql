@@ -41,7 +41,7 @@ select
     member_Pw = '1';
 
     
- --2. 고객의 소리
+ --2. 고객의 소리 테이블
 create table question_list(
 	list_num             number         primary key,
     member_id            varchar2(30)   constraint memberId_qe_fk references hotel_member(member_id) on delete cascade,
@@ -52,4 +52,16 @@ create table question_list(
     list_check           varchar2(30)   default 0
 );
  
- create SEQUENCE question_list_seq;
+ create sequence question_list_seq;
+ 
+--3 댓글 테이블
+create table reply(
+    reply_num         number          primary key,
+    reply_content     varchar2(500)   not null,
+    reply_date        date            default sysdate not null,
+    list_Num          number          constraint listNum_reply_fk references question_list(list_Num),
+    member_Id         varchar2(30)    constraint memberId_reply_fk references hotel_member(member_Id),
+    member_Nm		  varchar2(30)
+);
+
+create sequence reply_seq nocache;
