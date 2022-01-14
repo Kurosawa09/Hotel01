@@ -40,7 +40,11 @@
             <li><a href="rooms.html">Our Rooms</a></li>
             <li><a href="reservation.html">Reservation</a></li>
             <li class="hidden-xs probootstrap-logo-center"><a href="index.html"><img src="/resources/img/logo_md.png" class="hires" width="181" height="50" alt="Free Bootstrap Template by uicookies.com"></a></li>
+<<<<<<< HEAD
             <li><a href="/question/questionList">후기</a></li>
+=======
+            <li><a href="/question/questionList">íê¸°</a></li>
+>>>>>>> origin/kimtaewoo
             
             <c:if test="${empty memberId }">
             	<li><a href="/member/join">Sign up</a></li>
@@ -48,7 +52,11 @@
             </c:if>
             
             <c:if test="${not empty memberId }">
+<<<<<<< HEAD
             	<li><a href="/member/join">회원 정보 수정</a></li>
+=======
+            	<li><a href="/member/join">íì ì ë³´ ìì </a></li>
+>>>>>>> origin/kimtaewoo
             	<li><a href="/member/logout">Logout</a></li>
             </c:if>
 
@@ -446,4 +454,8 @@
 
 
   </body>
+<<<<<<< HEAD
+=======
+>>>>>>> origin/hataein
+>>>>>>> origin/kimtaewoo
 </html>
