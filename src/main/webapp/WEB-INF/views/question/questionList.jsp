@@ -48,7 +48,7 @@
             </c:if>
             
             <c:if test="${not empty memberId }">
-            	<li><a href="/member/join">회원 정보 수정</a></li>
+            	<li><a href="/member/join">회원 정보 수정~</a></li>
             	<li><a href="/member/logout">Logout</a></li>
             </c:if>
             </ul>
