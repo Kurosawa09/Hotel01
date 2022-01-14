@@ -6,8 +6,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.spring.hotel.service.HotelMemberService;
@@ -66,7 +70,7 @@ public class HotelMemberController {
 		String returnUrl = null;
 		if(loginNm == null) {
 			logger.info("로그인 실패");
-			returnUrl = "redirect:/";
+			returnUrl = "redirect:/member/login";
 		}else {
 			logger.info("로그인 성공");
 			session.setAttribute("memberId", memberId);
@@ -83,6 +87,34 @@ public class HotelMemberController {
 		session.invalidate();
 		return "redirect:/";
 	}
+	
+	// ID 중복검사
+		@ResponseBody
+		@RequestMapping(value = "/idChk", method = RequestMethod.GET)
+		public String idChk(String idChk)
+		{
+			logger.info("idChk 메서드 실행 (GET).");
+			
+			logger.info("idChk : {}", idChk);
+			
+			String memberID = service.idchk(idChk);
+			logger.info("memberID : {}" , memberID);
+			
+			if(memberID == null) 
+			{
+				logger.info("회원 가입 가능.");
+				
+				return "available";
+			}
+			else 
+			{
+				logger.info("회원 가입 불가.");
+				
+				return null;
+			}
+			
+		}
+	
 }
 
 

@@ -36,11 +36,4 @@ public class HomeController {
 		return "home";
 	}
 	
-	@RequestMapping(value = "/room", method = RequestMethod.GET)
-	public String room() {
-		logger.info("room(GET)메소드 실행");
-		
-		return "/room";
-	}
-	
 }

@@ -45,4 +45,14 @@ public class HotelMemberService {
 
 		return repository.selectMember(loginMember);
 	}
+
+
+	public String idchk(String idChk) 
+	{
+		return repository.idChk(idChk);
+	}
+
+
+
+
 }

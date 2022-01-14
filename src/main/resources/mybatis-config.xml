@@ -5,11 +5,12 @@
 <configuration>
 	<typeAliases>
 			<typeAlias type="com.spring.hotel.vo.HotelMemberVO" alias="Member"/>
-			<!-- <typeAlias type="com.spring.hotel.vo.QuestionListVO" alias="Question"/> -->
+			<typeAlias type="com.spring.hotel.vo.QuestionListVO" alias="Question"/>
+			<typeAlias type="com.spring.hotel.vo.ReplyVO" alias="Reply"/>
 	</typeAliases>
 	
 	<mappers>
 			<mapper resource="mappers/memberMapper.xml"/>
-			<!-- <mapper resource="mappers/questionListMapper.xml"/> -->
+			<mapper resource="mappers/questionListMapper.xml"/>
 	</mappers>
 </configuration>
