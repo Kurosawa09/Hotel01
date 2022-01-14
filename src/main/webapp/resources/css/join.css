@@ -13,8 +13,8 @@ body {
 
 .loginForm {
   position:absolute;
-  width:600px;
-  height:700px;
+  width:300px;
+  height:400px;
   padding: 30px, 20px;
   background-color:#FFFFFF;
   text-align:center;
@@ -33,9 +33,7 @@ body {
   border-bottom: 2px solid #adadad;
   margin: 30px;
   padding: 10px 10px;
-  
 }
-
 
 .passForm{
   border-bottom: 2px solid #adadad;
@@ -62,47 +60,6 @@ body {
   height:25px;
   background: none;
 }
-
-.pwChk {
-  width: 100%;
-  border:none;
-  outline:none;
-  color: #636e72;
-  font-size:16px;
-  height:25px;
-  background: none;
-}
-
-.name {
-  width: 100%;
-  border:none;
-  outline:none;
-  color: #636e72;
-  font-size:16px;
-  height:25px;
-  background: none;
-}
-
-.tel {
-  width: 100%;
-  border:none;
-  outline:none;
-  color: #636e72;
-  font-size:16px;
-  height:25px;
-  background: none;
-}
-
-.email {
-  width: 100%;
-  border:none;
-  outline:none;
-  color: #636e72;
-  font-size:16px;
-  height:25px;
-  background: none;
-}
-
 
 .btn {
   position:relative;

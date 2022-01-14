@@ -38,22 +38,4 @@ public class HotelMemberRepository {
 		}
 		return result;
 	}
-
-	public String idChk(String idChk) 
-	{
-		String result = null;
-		HotelMemberMapper mapper = null;
-		
-		try
-		{
-			mapper = session.getMapper(HotelMemberMapper.class);
-			result = mapper.idChk(idChk);
-		}
-		catch(Exception e)
-		{
-			e.printStackTrace();
-		}
-		
-		return result;
-	}
 }
