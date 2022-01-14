@@ -23,6 +23,15 @@
 	
 	<context:component-scan base-package="com.spring.hotel" />
 	
+	<beans:bean id = "loginInterceptor" class= "com.spring.hotel.util.LoginInterceptor"></beans:bean>
+	
+	<interceptors>
+		<interceptor>
+			<mapping path="/member/**"/>
+			<mapping path="question/**"/>
+			<beans:ref bean="loginInterceptor" />
+		</interceptor>
+	</interceptors>
 	
 	
 </beans:beans>

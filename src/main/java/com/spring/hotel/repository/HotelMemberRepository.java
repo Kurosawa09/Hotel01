@@ -38,4 +38,44 @@ public class HotelMemberRepository {
 		}
 		return result;
 	}
+
+	public String confirmPw(HotelMemberVO confirmMember) {
+		String result = null;
+		HotelMemberMapper mapper = null;
+		
+		try {
+			mapper= session.getMapper(HotelMemberMapper.class);
+			result = mapper.confirmPw(confirmMember);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return result;
+	}
+
+	public int updateMember(HotelMemberVO updateMember) {
+		int result = 0;
+		HotelMemberMapper mapper = null;
+		
+		try {
+			mapper= session.getMapper(HotelMemberMapper.class);
+			result = mapper.updateMember(updateMember);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return result;
+	}
+
+	public int deleteMember(HotelMemberVO deleteMember) {
+		int result = 0;
+		HotelMemberMapper mapper = null;
+		
+		try {
+			mapper= session.getMapper(HotelMemberMapper.class);
+			result = mapper.deleteMember(deleteMember);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return result;
+	}
+
 }

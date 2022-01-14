@@ -45,4 +45,36 @@ public class HotelMemberService {
 
 		return repository.selectMember(loginMember);
 	}
+
+	// 비밀번호 검증 메소드
+	public String confirmPw(String memberId, String preMemberPw) {
+		String memberPw = preMemberPw;
+		HotelMemberVO confirmMember = new HotelMemberVO();
+		confirmMember.setMemberId(memberId);
+		confirmMember.setMemberPw(memberPw);
+		
+		return repository.confirmPw(confirmMember);
+	}
+
+
+	public int updateMember(String memberId, String memberPw, String memberNm, String memberEmail,
+			String memberTel) {
+		HotelMemberVO updateMember = new HotelMemberVO();
+		updateMember.setMemberId(memberId);
+		updateMember.setMemberPw(memberPw);
+		updateMember.setMemberNm(memberNm);
+		updateMember.setMemberEmail(memberEmail);
+		updateMember.setMemberTel(memberTel);
+		
+		return repository.updateMember(updateMember);
+	}
+
+
+	public int deleteMember(String memberId, String memberPw) {
+		HotelMemberVO deleteMember = new HotelMemberVO();
+		deleteMember.setMemberId(memberId);
+		deleteMember.setMemberPw(memberPw);
+		
+		return repository.deleteMember(deleteMember);
+	}
 }

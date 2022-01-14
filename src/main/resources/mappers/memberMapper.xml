@@ -38,5 +38,35 @@
   			</if>
   	</select>	
 	
+	<select id="confirmPw" parameterType="Member" resultType="String">
+		select
+			member_nm
+		from
+			hotel_member
+		where
+			member_id = #{memberId }
+			and
+			member_pw = #{memberPw }
+	</select>
 	
+	<update id="updateMember" parameterType="Member">
+		update
+			hotel_member
+		set
+			member_nm = #{memberNm },
+			member_pw = #{memberPw },
+			member_email = #{memberEmail },
+			member_tel = #{memberTel }
+		where
+			member_id = #{memberId }
+	</update>
+	
+	<delete id="deleteMember" parameterType="Member">
+		delete from
+			hotel_member
+		where
+			member_id = #{memberId }
+			and
+			member_pw = #{memberPw }
+	</delete>
 </mapper>
