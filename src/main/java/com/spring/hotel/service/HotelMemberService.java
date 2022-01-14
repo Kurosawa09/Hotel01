@@ -77,4 +77,10 @@ public class HotelMemberService {
 		
 		return repository.deleteMember(deleteMember);
 	}
+
+	public String idchk(String idChk) 
+	{
+		return repository.idChk(idChk);
+	}
+
 }

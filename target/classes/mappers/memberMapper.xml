@@ -48,6 +48,15 @@
 			and
 			member_pw = #{memberPw }
 	</select>
+
+	<select id = "idChk" parameterType = "String" resultType = "String">
+		select
+			member_Id as memberId
+		from
+			hotel_member
+		where
+			member_Id like #{idChk }
+	</select>
 	
 	<update id="updateMember" parameterType="Member">
 		update

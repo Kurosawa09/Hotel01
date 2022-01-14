@@ -6,6 +6,7 @@
 	<typeAliases>
 			<typeAlias type="com.spring.hotel.vo.HotelMemberVO" alias="Member"/>
 			<typeAlias type="com.spring.hotel.vo.QuestionListVO" alias="Question"/>
+			<typeAlias type="com.spring.hotel.vo.ReplyVO" alias="Reply"/>
 	</typeAliases>
 	
 	<mappers>

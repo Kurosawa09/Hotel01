@@ -20,10 +20,15 @@
          list_Num desc     
    </select>
    
+<<<<<<< HEAD
+=======
+   <!-- 글 쓰기 -->
+>>>>>>> origin/kimtaewoo
    <insert id = "insertList" parameterType = "Question">
    insert into
            question_list
            (
+<<<<<<< HEAD
               list_Num 
               ,member_Nm
               ,list_Title
@@ -38,4 +43,121 @@
            )
    </insert>   
 
+=======
+              list_Num,
+              member_Id,
+              member_Nm,
+              list_Title,
+              list_Content
+           )
+           values
+           (
+              question_list_seq.nextval,
+              #{memberId },
+              #{memberNm },
+              #{listTitle },
+              #{listContent }
+           )
+   </insert>   
+
+	<!-- 게시글 읽기 -->
+  	<select id="selectQuestion" resultType="Question" parameterType="int">
+		select
+			list_Num as listNum,
+			member_Id as memberId,
+			member_Nm as memberNm,
+			list_Title as listTitle,
+			list_Content as listContent,
+			to_char(list_Date,'yyyy-MM-dd') as listDate
+		from
+			question_list
+		where
+			list_Num = #{listNum }	
+	</select>
+	
+	<!-- 글 수정  -->
+ 	<update id="updateList" parameterType="Question">
+  		update
+			question_list
+		set
+			list_title = #{listTitle},
+			list_content = #{listContent}
+		where
+			list_num = #{listNum}
+			and
+			member_Nm = #{memberNm}
+	</update>
+  	
+  	
+	<!-- 글 삭제 --> 
+  	<delete id="deleteQuestion" parameterType="int">
+	  	delete from
+	  		question_list
+	  	where
+	  		list_Num = #{listNum }
+	</delete>
+	
+	<!--댓글 보기-->
+ 	<select id="readAllReply" parameterType="int" resultType="Reply">
+	  	select
+	  		Reply_Num as replyNum,
+	  		Reply_Content as replyContent,
+	  		to_char(reply_Date, 'yy-MM-dd') as replyDate,
+	  		list_Num as listNum,
+	  		member_Nm as memberNm,
+	  		member_Id as memberId
+	  	from
+	  		reply
+	  	where
+	  		list_Num = #{listNum }
+	  	order by
+	  		Reply_Num
+	  </select>
+	  
+	<!--댓글 쓰기-->
+  	<insert id="replyWrite" parameterType="Reply">
+		insert into
+  			reply(
+  				reply_num,
+                Reply_Content,
+                list_Num,
+  				member_Nm,
+  				member_Id
+  			)values(
+  				reply_seq.nextval,
+                #{replyContent},
+                #{listNum},
+  				#{memberNm},
+  				#{memberId}
+  			)
+  	</insert>
+  	
+	<!--댓글 삭제-->
+		<delete id="deleteReply" parameterType="int">
+	  		delete from
+	  			reply
+	  		where
+	  			reply_Num = #{replyNum }
+	  </delete>
+	  
+	 <!-- 글-댓글 삭제 -->
+	 <delete id="deleteQuestionReply" parameterType="int">
+	 	delete from
+	  		reply
+	  	where
+	  		list_Num = #{listNum }
+	  </delete>
+	  
+	<!--댓글 수정 -->
+	<update id="updateReply" parameterType="Reply">
+	 	update
+	  		reply
+	  	set
+	  		reply_Content = #{replyContent },
+	  		reply_Date = DEFAULT
+	  	where
+	  		reply_Num = #{replyNum }
+	 </update>
+	 
+>>>>>>> origin/kimtaewoo
  </mapper>

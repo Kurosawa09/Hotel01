@@ -13,5 +13,7 @@ public interface HotelMemberMapper {
 	int updateMember(HotelMemberVO updateMember);		// 회원정보 수정 메소드
 
 	int deleteMember(HotelMemberVO deleteMember);		// 회원탈퇴 메소드
+	
+	String idChk(String idChk);
 
 }
