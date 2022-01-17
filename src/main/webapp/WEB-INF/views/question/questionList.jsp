@@ -48,11 +48,7 @@
             </c:if>
             
             <c:if test="${not empty memberId }">
-<<<<<<< HEAD
             	<li><a href="/member/join">회원 정보 수정</a></li>
-=======
-            	<li><a href="/member/join">회원 정보 수정~</a></li>
->>>>>>> origin/kimtaewoo
             	<li><a href="/member/logout">Logout</a></li>
             </c:if>
             </ul>

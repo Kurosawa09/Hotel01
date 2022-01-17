@@ -12,6 +12,9 @@ Licensed under the MIT license - http://opensource.org/licenses/MIT
 
 Copyright (c) 2015 Daniel Eden
 */
+div, p{
+	font-family: 'Nanum Gothic', sans-serif;
+}
 
 .animated {
   -webkit-animation-duration: 1s;

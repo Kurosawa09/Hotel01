@@ -24,13 +24,15 @@ public class QuestionListService
 	}
 
 	// 글 작성
-	public boolean insertList(String memberId,String memberNm, String listTitle, String listContent) 
+	public boolean insertList(String memberId,String memberNm, String listTitle, String listContent, String originalFilename, String savedFilename) 
 	{
 		QuestionListVO newQuestion = new QuestionListVO();
 		newQuestion.setMemberId(memberId);
 		newQuestion.setMemberNm(memberNm);
 	    newQuestion.setListTitle(listTitle);
 	    newQuestion.setListContent(listContent);
+	    newQuestion.setOriginalFilename(originalFilename);
+	    newQuestion.setSavedFilename(savedFilename);
 	      
 	    return repository.insertList(newQuestion) > 0;
 	}

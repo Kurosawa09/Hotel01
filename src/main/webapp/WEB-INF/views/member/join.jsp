@@ -4,7 +4,6 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="/resources/css/join.css">
-<<<<<<< HEAD
 	<script type = "text/javascript" src="/resources/js/jquery-3.6.0.min.js">
 	function checkForm()
 	{
@@ -17,7 +16,6 @@
 		
 		
 		if ( memberId.length == 0 )
-=======
 	<script type = "text/javascript" src="/resources/js/jquery-3.6.0.min.js"></script>
 	<script type = "text/javascript">
 	
@@ -80,29 +78,23 @@
 		}
 		
 		 if ( memberId.length == 0 )
->>>>>>> origin/kimtaewoo
 		{
 			alert("ID를 입력해주세요.");
 			return false;
 		} // if
 		
-<<<<<<< HEAD
-=======
 		if ( 3 > memberId.length > 14 )
 		{
 			alert("ID 4글자 이상 13글자 이하로 입력해주세요.");
 			return false;
 		} // if
 		
->>>>>>> origin/kimtaewoo
 		if ( memberPw.length == 0 )
 		{
 			alert("PW를 입력해주세요.");
 			return false;
 		} // if
 		
-<<<<<<< HEAD
-=======
 		if ( memberPw != memberChk )
 		{
 			alert("PW가 다릅니다 확인해 주세요");
@@ -115,23 +107,18 @@
 			return false;
 		} // if
 		
->>>>>>> origin/kimtaewoo
 		if ( memberNm.length == 0 )
 		{
 			alert("Nm를 입력해주세요.");
 			return false;
 		} // if
-<<<<<<< HEAD
-=======
 		
 		
->>>>>>> origin/kimtaewoo
 		if ( memberTel.length == 0 )
 		{
 			alert("tel를 입력해주세요.");
 			return false;
 		} // if
-<<<<<<< HEAD
 		if ( memberEmail.length == 0 )
 		{
 			alert("Email를 입력해주세요.");
@@ -176,8 +163,8 @@
       
       <button type="submit" class="btn" button ="button()">
         Sign Up
-=======
 		
+		<script>
 		if ( memberTel.length < 11)
 		{
 			alert("전화번호를 정확히 입력해주세요.");
@@ -201,32 +188,6 @@
 	
 </head>
 
-  <body width="100%" height="100%">
-    <form action="/member/join" method="post" class="loginForm" onsubmit = "return checkForm();">
-      <h2>Sign Up</h2>
-      <div class="idForm">
-        <input type="text" class="id" placeholder="ID" id = "memberId" name = "memberId" oninput="checkId()">   	
-      </div>
-      <div class="passForm">
-        <input type="password" class="pw" placeholder="PW" id = "memberPw"  name="memberPw">
-      </div>
-      <div class="passForm">
-        <input type="password" class="pwChk" id="memberChk" placeholder="PWChk" >
-      </div>
-      <div class="passForm">
-        <input type="text" class="name" placeholder="Name" id = "memberNm" name="memberNm">
-      </div>
-      <div class="passForm">
-        <input type="text" class="tel" placeholder="tel" id = "memberTel" name="memberTel">
-      </div>
-      <div class="passForm">
-        <input type="text" class="email" placeholder="email" id ="memberEmail" name="memberEmail">
-      </div>
-      <input type = "button" value = "ID중복검사" onclick = "idChk();"><br>
-      <button type="submit" class="btn">
-               회원가입	
->>>>>>> origin/kimtaewoo
-      </button>
       <div class="bottomText">
         Find ID or password <a href="#">보류</a>
       </div>

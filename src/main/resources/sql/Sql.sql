@@ -2,6 +2,8 @@ select * from hotel_member;
 drop table hotel_member;
 drop table question_list;
 drop SEQUENCE question_list_seq;
+drop table reply;
+drop sequence reply_seq;
 
 -- 1.회원가입 테이블
 create table hotel_member (
@@ -41,15 +43,16 @@ select
     member_Pw = '1';
 
     
- --2. 고객의 소리 테이블
+ --2. 후기 및 질문 테이블
 create table question_list(
-	list_num             number         primary key,
-    member_id            varchar2(30)   constraint memberId_qe_fk references hotel_member(member_id) on delete cascade,
-    member_nm            varchar2(30),
-    list_title           varchar2(300)  not null,
-    list_content         varchar2(500)  not null,
-    list_date            date           default sysdate,
-    list_check           varchar2(30)   default 0
+	list_num            number         primary key,
+    member_id           varchar2(30)   constraint memberId_qe_fk references hotel_member(member_id) on delete cascade,
+    member_nm           varchar2(30),
+    list_title          varchar2(300)  not null,
+    list_content        varchar2(500)  not null,
+    list_date           date           default sysdate,
+    original_filename	varchar2(3000),
+    saved_filename		varchar2(3000)
 );
  
  create sequence question_list_seq;

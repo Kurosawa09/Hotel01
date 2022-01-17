@@ -11,6 +11,6 @@ public class QuestionListVO
 	private String listTitle;
 	private String listContent;
 	private String listDate;
-	private String listCheck;
-	
+	private String originalFilename;
+	private String savedFilename;
 }

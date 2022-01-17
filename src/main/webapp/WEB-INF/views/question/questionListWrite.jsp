@@ -10,8 +10,7 @@
 <body>
 	<%@ include file = "/WEB-INF/views/menuBar.jsp" %>
 	<h1>새 글 작성</h1>
-	
-	<form action = "/question/questionListWrite" method = "post">
+		<form action = "/question/questionListWrite" method = "post" enctype = "multipart/form-data">
 		<table border = "1">
 			<tr>
 				<td>제목</td>
@@ -27,10 +26,16 @@
 			</tr>
 			<tr>
 				<td colspan = "2">
+					<input type = "file" name ="uploadFile">					
+				</td>
+			</tr>
+			<tr>
+				<td colspan = "2">
 					<input type = "submit" value = "작성하기" id = "submit">
 				</td>
 			</tr>
 		</table>	
 	</form>
+
 </body>
 </html>
