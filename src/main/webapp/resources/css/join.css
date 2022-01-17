@@ -7,14 +7,15 @@
 
 }
 
-body {
-  background-color: #34495e;
+body 
+{
+  background-color: #F0FF61;
 }
 
 .loginForm {
   position:absolute;
   width:600px;
-  height:700px;
+  height:500px;
   padding: 30px, 20px;
   background-color:#FFFFFF;
   text-align:center;
@@ -29,7 +30,8 @@ body {
   margin: 30px;
 }
 
-.idForm{
+.idForm
+{
   border-bottom: 2px solid #adadad;
   margin: 30px;
   padding: 10px 10px;
@@ -108,24 +110,32 @@ body {
   position:relative;
   left:40%;
   transform: translateX(-50%);
-  margin-bottom: 40px;
+  margin-bottom: 60px;
+  margin : 30px;
   width:80%;
   height:40px;
-  background: linear-gradient(125deg,#81ecec,#6c5ce7,#81ecec);
   background-position: left;
   background-size: 200%;
-  color:white;
+  color:black;
   font-weight: bold;
   border:none;
   cursor:pointer;
   transition: 0.4s;
   display:inline;
+  text-align:center;
+  padding: 20px 20px;
+  background-color: lightgrey;
 }
 
-.btn:hover {
+.btn:hover 
+{
   background-position: right;
 }
 
-.bottomText {
-  text-align: center;
+.bottomText 
+{
+  background-color:#FFFFFF;
+  text-align:center;
+  margin: 30px;
+  padding: 10px 10px;
 }
