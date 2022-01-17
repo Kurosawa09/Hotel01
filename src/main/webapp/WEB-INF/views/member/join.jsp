@@ -2,23 +2,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
 <html>
-<head>
-	<link rel="stylesheet" type="text/css" href="/resources/css/join.css">
-<<<<<<< HEAD
-	<script type = "text/javascript" src="/resources/js/jquery-3.6.0.min.js">
-	function checkForm()
-	{
-		var memberId = document.getElementById("memberID").value; 
-		var memberPw = document.getElementById("memberPW").value;
-		var memberNm = document.getElementById("memberNm").value;
-		var memberTel = document.getElementById("memberTel").value; 
-		var memberEmail = document.getElementById("memberEmail").value; 
-		var memberCode = document.getElementById("memberCode").value; 
-		
-		
-		if ( memberId.length == 0 )
-=======
+    <link rel="stylesheet" type="text/css" href="/resources/css/join.css">	
 	<link href="https://fonts.googleapis.com/css?family=Crimson+Text:300,400,700|Rubik:300,400,700,900" rel="stylesheet">
+    
     <link rel="stylesheet" href="/resources/css/styles-merged.css">
     <link rel="stylesheet" href="/resources/css/style.min.css">
     
@@ -27,10 +13,7 @@
     <title>uiCookies:Atlantis &mdash; Free Bootstrap Theme, Free Responsive Bootstrap Website Template</title>
     <meta name="description" content="Free Bootstrap Theme by uicookies.com">
     <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
-  
-</head>	
-	
->>>>>>> origin/kimtaewoo
+    
 	<script type = "text/javascript" src="/resources/js/jquery-3.6.0.min.js"></script>
 	<script type = "text/javascript">
 	
@@ -92,11 +75,7 @@
 		    return (memberEmail != '' && memberEmail != 'undefined' && regex.test(memberEmail));
 		}
 		
-<<<<<<< HEAD
-		 if ( memberId.length == 0 )
-=======
 		if ( memberId.length == 0 )
->>>>>>> origin/kimtaewoo
 		{
 			alert("ID를 입력해주세요.");
 			return false;
@@ -131,21 +110,12 @@
 			alert("Nm를 입력해주세요.");
 			return false;
 		} // if
-<<<<<<< HEAD
-		
-		
-=======
-
->>>>>>> origin/kimtaewoo
 		if ( memberTel.length == 0 )
 		{
 			alert("tel를 입력해주세요.");
 			return false;
 		} // if
-<<<<<<< HEAD
-=======
 
->>>>>>> origin/kimtaewoo
 		if ( memberEmail.length == 0 )
 		{
 			alert("Email를 입력해주세요.");
@@ -160,7 +130,6 @@
 		
 		
 			
-
 	return true;
 }
 	</script>
@@ -204,6 +173,7 @@
         </nav>
         </div>
     <!-- </div> -->
+    
   </header>
   </form>
   <!-- END: header -->
@@ -228,41 +198,9 @@
       <div class="passForm">
         <input type="text" class="email" placeholder="email" id="memberEmail">
       </div>
-<<<<<<< HEAD
-      
-      <button type="submit" class="btn" button ="button()">
-        Sign Up
-		
-		<script>
-		if ( memberTel.length < 11)
-		{
-			alert("전화번호를 정확히 입력해주세요.");
-			return false;
-		} // if
-		
-		if ( memberEmail.length == 0 )
-		{	
-			alert("Email를 입력해주세요.");
-			return false;
-		} // if
-
- 
-		 if ( ! email_check(memberEmail) ) {
-			 alert("Email를 입력해주세요.");
-			}
-			
-		return true;
-	} // checkForm()
-	</script>
-	
-</head>
-
-=======
       <button type="submit" class="btn">
       	회원가입
       </button>
-    
->>>>>>> origin/kimtaewoo
       <div class="bottomText">
         Find ID or password 
         <a href="#">보류</a>

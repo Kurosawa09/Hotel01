@@ -18,7 +18,6 @@
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text:300,400,700|Rubik:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="/resources/css/styles-merged.css">
     <link rel="stylesheet" href="/resources/css/style.min.css">
-<<<<<<< HEAD
     
     <!-- 구글지도 설정 -->
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
@@ -26,14 +25,8 @@
 	<style>
 	#map_ma {width:100%; height:400px; clear:both; border:solid 1px purple;}
 	</style>
-
-    <!--[if lt IE 9]>
-      <script src="js/vendor/html5shiv.min.js"></script>
-      <script src="js/vendor/respond.min.js"></script>
-    <![endif]-->
-=======
->>>>>>> origin/kimtaewoo
   </head>
+  
   <body width="100%" height="100%">
 
   <!-- START: header -->
@@ -48,19 +41,11 @@
 
         <nav role="navigation" class="probootstrap-nav hidden-xs">
           <ul class="probootstrap-main-nav">
-<<<<<<< HEAD
-            <li class="active"><a href="/">Home</a></li>
-            <li><a href="rooms.html">Our Rooms</a></li>
-            <li><a href="/reservation/reservation">Reservation</a></li>
-            <li class="hidden-xs probootstrap-logo-center"><a href="/reservation/reservation"><img src="/resources/img/logo_md.png" class="hires" width="181" height="50" alt="Free Bootstrap Template by uicookies.com"></a></li>
-            <li><a href="/question/questionList">REVIEW</a></li>
-            
-=======
             <li><a href="rooms.html">호텔방 소개</a></li>
             <li><a href="reservation.html">예약</a></li>
             <li class="hidden-xs probootstrap-logo-center"><a href="/"><img src="/resources/img/logo_md.png" class="hires" width="181" height="50" alt="Free Bootstrap Template by uicookies.com"></a></li>
             <li><a href="/question/questionList">후기</a></li>
->>>>>>> origin/kimtaewoo
+
             <c:if test="${empty memberId }">
             	<li><a href="/member/join">회원가입</a></li>
             	<li><a href="/member/login">로그인</a></li>
@@ -471,9 +456,9 @@
 		<script src="/resources/js/custom.js"></script>
 
 
-<<<<<<< HEAD
+
 	</body>
-=======
+
   </body>
->>>>>>> origin/kimtaewoo
+
 </html>

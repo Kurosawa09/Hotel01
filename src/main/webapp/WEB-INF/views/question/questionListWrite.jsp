@@ -20,18 +20,6 @@
   
   </head> 
 <body>
-<<<<<<< HEAD
-	<%@ include file = "/WEB-INF/views/menuBar.jsp" %>
-	<h1>새 글 작성</h1>
-		<form action = "/question/questionListWrite" method = "post" enctype = "multipart/form-data">
-		<table border = "1">
-			<tr>
-				<td>제목</td>
-				<td>
-					<input type = "text" name = "listTitle" placeholder = "제목">
-				</td>
-			</tr>
-=======
 	<!-- START: header -->
 <form>
   <header role="banner" class="probootstrap-header">
@@ -87,7 +75,6 @@
 	
 	<form action = "/question/questionListWrite" method = "post" class = "form">
 		<table border = "1" class = "table">
->>>>>>> origin/kimtaewoo
 			<tr>
 				<th>
 					<td class = "td1">제목</td>
@@ -96,25 +83,12 @@
 					</td>
 				<th>
 			</tr>
-			<tr>
-<<<<<<< HEAD
-				<td colspan = "2">
-					<input type = "file" name ="uploadFile">					
-				</td>
-			</tr>
-			<tr>
-				<td colspan = "2">
-					<input type = "submit" value = "작성하기" id = "submit">
-				</td>
-=======
 				<th>
 					<td class = "td2">내용</td>
 					<td class = "td4">
 					<input class = "td4" name = "listContent" placeholder = "불건전한 내용 작성시 고지 없지 삭제되오니 주의 바랍니다">
 					</td>
 				<th>
->>>>>>> origin/kimtaewoo
-			</tr>
 				
 			
 			</table>
@@ -125,10 +99,6 @@
 				취소하기
 			</button>
 	</form>
-<<<<<<< HEAD
-
-=======
-	
   <div class="row mt40">
         <div class="col-md-12 text-center">
           <ul class="probootstrap-footer-social">
@@ -141,8 +111,5 @@
           </p>
         </div>
       </div>
-  
-  
->>>>>>> origin/kimtaewoo
 </body>
 </html>
