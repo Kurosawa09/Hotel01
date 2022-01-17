@@ -11,8 +11,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.multipart.MultipartFile;
 
 import com.spring.hotel.service.QuestionListService;
+import com.spring.hotel.util.FileService;
 import com.spring.hotel.vo.QuestionListVO;
 import com.spring.hotel.vo.ReplyVO;
 
@@ -21,6 +24,7 @@ import com.spring.hotel.vo.ReplyVO;
 @RequestMapping(value = "/question")
 public class QuestionListController {
 	private static final Logger logger = LoggerFactory.getLogger(QuestionListController.class);
+	private static final String UPLOAD_PATH = "C:\\Users\\user\\Documents\\Hotel01\\Upload Files";
 
 	@Autowired
 	private QuestionListService service;
@@ -51,7 +55,7 @@ public class QuestionListController {
 
 	// 글 쓰기
 	@RequestMapping(value = "/questionListWrite", method = RequestMethod.POST)
-	public String questionListWrite(HttpSession session, String listTitle, String listContent) {
+	public String questionListWrite(HttpSession session, @RequestParam("uploadFile") MultipartFile mfile, String listTitle, String listContent) {
 		logger.info("questionListWrite 메소드 실행(POST)");
 		String memberId = (String) session.getAttribute("memberId");
 		String memberNm = (String) session.getAttribute("memberNm");
@@ -59,8 +63,10 @@ public class QuestionListController {
 		logger.info("memberId:{}", memberId);
 		logger.info("listTitle:{}", listTitle);
 		logger.info("listContent:{}", listContent);
+		
+		String savedFileName = FileService.saveFile(mfile, UPLOAD_PATH);
 
-		boolean result = service.insertList(memberId, memberNm, listTitle, listContent);
+		boolean result = service.insertList(memberId, memberNm, listTitle, listContent, mfile.getOriginalFilename(), savedFileName);
 
 		String returnUrl = null;
 		if (result) {

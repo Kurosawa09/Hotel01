@@ -1,24 +1,12 @@
 
 <!DOCTYPE html>
-<<<<<<< HEAD
-<html>
-<head>
-<meta charset="UTF-8">
-=======
 <!-- saved from url=(0026)http://localhost:8888/room -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
->>>>>>> origin/kimtaewoo
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Our Room</title>
 <meta name="description" content="Free Bootstrap Theme by uicookies.com">
 <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
-<<<<<<< HEAD
-=======
-    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:300,400,700|Rubik:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="/resources/css/styles-merged.css">
-    <link rel="stylesheet" href="/resources/css/style.min.css">
->>>>>>> origin/kimtaewoo
 <style id="" media="all">/* latin */
 @font-face {
   font-family: 'Crimson Text';
@@ -196,34 +184,21 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 </style>
-<<<<<<< HEAD
-<link rel="stylesheet" href="/resources/css/styles-merged.css">
-<link rel="stylesheet" href="/resources/css/style.min.css" >
+<link rel="stylesheet" href="./Our Room_files/styles-merged.css">
+<link rel="stylesheet" href="./Our Room_files/style.min.css">
 <meta name="robots" content="noindex, nofollow">
-<script>(function(w,d){!function(e,t,r,a,s){e[r]=e[r]||{},e[r].executed=[],e.zaraz={deferred:[]};var n=t.getElementsByTagName("title")[0];e[r].c=t.cookie,n&&(e[r].t=t.getElementsByTagName("title")[0].text),e[r].w=e.screen.width,e[r].h=e.screen.height,e[r].j=e.innerHeight,e[r].e=e.innerWidth,e[r].l=e.location.href,e[r].r=t.referrer,e[r].k=e.screen.colorDepth,e[r].n=t.characterSet,e[r].o=(new Date).getTimezoneOffset(),//
+<script defer="" src="./Our Room_files/s.js.다운로드"></script><script>(function(w,d){!function(e,t,r,a,s){e[r]=e[r]||{},e[r].executed=[],e.zaraz={deferred:[]};var n=t.getElementsByTagName("title")[0];e[r].c=t.cookie,n&&(e[r].t=t.getElementsByTagName("title")[0].text),e[r].w=e.screen.width,e[r].h=e.screen.height,e[r].j=e.innerHeight,e[r].e=e.innerWidth,e[r].l=e.location.href,e[r].r=t.referrer,e[r].k=e.screen.colorDepth,e[r].n=t.characterSet,e[r].o=(new Date).getTimezoneOffset(),//
 e[s]=e[s]||[],e.zaraz._preTrack=[],e.zaraz.track=(t,r)=>e.zaraz._preTrack.push([t,r]),e[s].push({"zaraz.start":(new Date).getTime()});var i=t.getElementsByTagName(a)[0],o=t.createElement(a);o.defer=!0,o.src="/cdn-cgi/zaraz/s.js?"+new URLSearchParams(e[r]).toString(),i.parentNode.insertBefore(o,i)}(w,d,"zarazData","script","dataLayer");})(window,document);</script>
-=======
-
-<meta name="robots" content="noindex, nofollow">
-
->>>>>>> origin/kimtaewoo
 </head>
 <body>
 
 <header role="banner" class="probootstrap-header">
 
 	<div class="row">
-<<<<<<< HEAD
-		<a href="/" class="probootstrap-logo visible-xs">
-			<img src="/resources/img/logo_sm.png" class="hires" width="120" height="33" alt="Free Bootstrap Template by uicookies.com">
-		</a>
-		<a href="#" class="probootstrap-burger-menu visible-xs">
-=======
 		<a href="http://localhost:8888/index.html" class="probootstrap-logo visible-xs">
 			<img src="./Our Room_files/logo_sm.png" class="hires" width="120" height="33" alt="Free Bootstrap Template by uicookies.com">
 		</a>
 		<a href="http://localhost:8888/room#" class="probootstrap-burger-menu visible-xs">
->>>>>>> origin/kimtaewoo
 			<i>Menu</i>
 		</a>
 		<div class="mobile-menu-overlay">
@@ -231,33 +206,6 @@ e[s]=e[s]||[],e.zaraz._preTrack=[],e.zaraz.track=(t,r)=>e.zaraz._preTrack.push([
 	<nav role="navigation" class="probootstrap-nav hidden-xs">
 		<ul class="probootstrap-main-nav">
 			<li>
-<<<<<<< HEAD
-				<a href="/">Home</a>
-			</li>
-			<li>
-				<a href="about.html">About</a>
-			</li>
-			<li class="active">
-				<a href="/room">Our Rooms</a>
-			</li>
-			<li class="hidden-xs probootstrap-logo-center">
-				<a href="/">
-					<img src="/resources/img/logo_md.png" class="hires" width="181" height="50" alt="Free Bootstrap Template by uicookies.com">
-				</a>
-			</li>
-			<li>
-				<a href="reservation.html">Reservation</a>
-			</li>
-			<li>
-				<a href="blog.html">Blog</a>
-			</li>
-			<li>
-				<a href="contact.html">Contact</a>
-			</li>
-		</ul>
-		<div class="extra-text visible-xs">
-			<a href="#" class="probootstrap-burger-menu">
-=======
 				<a href="http://localhost:8888/index.html">Home</a>
 			</li>
 			<li>
@@ -283,35 +231,22 @@ e[s]=e[s]||[],e.zaraz._preTrack=[],e.zaraz.track=(t,r)=>e.zaraz._preTrack.push([
 		</ul>
 		<div class="extra-text visible-xs">
 			<a href="http://localhost:8888/room#" class="probootstrap-burger-menu">
->>>>>>> origin/kimtaewoo
 				<i>Menu</i>
 			</a>
 		<h5>Connect With Us</h5>
 		<ul class="social-buttons">
 			<li>
-<<<<<<< HEAD
-				<a href="#">
-=======
 				<a href="http://localhost:8888/room#">
->>>>>>> origin/kimtaewoo
 					<i class="icon-twitter"></i>
 				</a>
 			</li>
 			<li>
-<<<<<<< HEAD
-				<a href="#">
-=======
 				<a href="http://localhost:8888/room#">
->>>>>>> origin/kimtaewoo
 					<i class="icon-facebook2"></i>
 				</a>
 			</li>
 			<li>
-<<<<<<< HEAD
-				<a href="#">
-=======
 				<a href="http://localhost:8888/room#">
->>>>>>> origin/kimtaewoo
 					<i class="icon-instagram2"></i>
 				</a>
 			</li>
@@ -324,56 +259,34 @@ e[s]=e[s]||[],e.zaraz._preTrack=[],e.zaraz.track=(t,r)=>e.zaraz._preTrack.push([
 
 <section class="probootstrap-slider flexslider probootstrap-inner">
 	<ul class="slides">
-<<<<<<< HEAD
-		<li style="background-image: url(/resources/img/slider_1.jpg);" class="overlay">
-=======
 		<li style="background-image: url(&quot;/resources/img/slider_1.jpg&quot;); width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; display: block; z-index: 2;" class="overlay flex-active-slide">
->>>>>>> origin/kimtaewoo
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1">
 						<div class="probootstrap-slider-text text-center">
-<<<<<<< HEAD
-							<p><img src="/resources/img/curve_white.svg" class="seperator probootstrap-animate" alt="Free HTML5 Bootstrap Template"></p>
-							<h1 class="probootstrap-heading probootstrap-animate">Best Rooms</h1>
-							<div class="probootstrap-animate probootstrap-sub-wrap">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</div>
-=======
 							<p><img src="./Our Room_files/curve_white.svg" class="seperator probootstrap-animate fadeInUp probootstrap-animated" alt="Free HTML5 Bootstrap Template" draggable="false"></p>
 							<h1 class="probootstrap-heading probootstrap-animate fadeInUp probootstrap-animated">Best Rooms</h1>
 							<div class="probootstrap-animate probootstrap-sub-wrap fadeInUp probootstrap-animated">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</div>
->>>>>>> origin/kimtaewoo
 						</div>
 					</div>
 				</div>
 			</div>
 		</li>
 	</ul>
-<<<<<<< HEAD
-</section>
-=======
 <ol class="flex-control-nav flex-control-paging"></ol><ul class="flex-direction-nav"><li class="flex-nav-prev"><a class="flex-prev flex-disabled" href="http://localhost:8888/room#" tabindex="-1"></a></li><li class="flex-nav-next"><a class="flex-next flex-disabled" href="http://localhost:8888/room#" tabindex="-1"></a></li></ul></section>
->>>>>>> origin/kimtaewoo
 <section class="probootstrap-section">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4 col-sm-6 col-xs-12">
 				<div class="probootstrap-room">
-<<<<<<< HEAD
-					<a href="#"><img src="/resources/img/room/roomClassic.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></a>
-=======
 					<a href="http://localhost:8888/room#"><img src="./Our Room_files/roomClassic.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></a>
->>>>>>> origin/kimtaewoo
 					<div class="text">
 						<h3>Classic Room</h3>
 						<p>Starting from <strong>$29.00/Night</strong></p>
 						<div class="post-meta mb30">
 						<p>방 설명</p>
 							<table>
-<<<<<<< HEAD
-								<tr>
-=======
 								<tbody><tr>
->>>>>>> origin/kimtaewoo
 									<td>방 면적</td>
 									<td>~~m^2</td>
 								</tr>
@@ -385,36 +298,22 @@ e[s]=e[s]||[],e.zaraz._preTrack=[],e.zaraz.track=(t,r)=>e.zaraz._preTrack.push([
 									<td>침대 사이즈</td>
 									<td>~~cm X ~~cm</td>
 								</tr>
-<<<<<<< HEAD
-							</table>
-						</div>
-						<p><a href="#" class="btn btn-primary" role="button">Reserve now for $29.00</a></p>
-=======
 							</tbody></table>
 						</div>
 						<p><a href="http://localhost:8888/room#" class="btn btn-primary" role="button">Reserve now for $29.00</a></p>
->>>>>>> origin/kimtaewoo
 					</div>
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-6 col-xs-12">
 				<div class="probootstrap-room">
-<<<<<<< HEAD
-					<a href="#"><img src="/resources/img/room/roomGrandDeluxe.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></a>
-=======
 					<a href="http://localhost:8888/room#"><img src="./Our Room_files/roomGrandDeluxe.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></a>
->>>>>>> origin/kimtaewoo
 					<div class="text">
 						<h3>Grand Deluxe Room</h3>
 						<p>Starting from <strong>$29.00/Night</strong></p>
 						<div class="post-meta mb30">
 							<p>방 설명</p>
 							<table>
-<<<<<<< HEAD
-								<tr>
-=======
 								<tbody><tr>
->>>>>>> origin/kimtaewoo
 									<td>방 면적</td>
 									<td>~~m^2</td>
 								</tr>
@@ -426,37 +325,23 @@ e[s]=e[s]||[],e.zaraz._preTrack=[],e.zaraz.track=(t,r)=>e.zaraz._preTrack.push([
 									<td>침대 사이즈</td>
 									<td>~~cm X ~~cm</td>
 								</tr>
-<<<<<<< HEAD
-							</table>
-						</div>
-						<p><a href="#" class="btn btn-primary" role="button">Reserve now for $29.00</a></p>
-=======
 							</tbody></table>
 						</div>
 						<p><a href="http://localhost:8888/room#" class="btn btn-primary" role="button">Reserve now for $29.00</a></p>
->>>>>>> origin/kimtaewoo
 					</div>
 				</div>
 			</div>
 			<div class="clearfix visible-sm-block"></div>
 			<div class="col-md-4 col-sm-6 col-xs-12">
 				<div class="probootstrap-room">
-<<<<<<< HEAD
-				<a href="#"><img src="/resources/img/room/roomUltraSuperior.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></a>
-=======
 				<a href="http://localhost:8888/room#"><img src="./Our Room_files/roomUltraSuperior.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></a>
->>>>>>> origin/kimtaewoo
 					<div class="text">
 						<h3>Ultra Superior Room</h3>
 						<p>Starting from <strong>$29.00/Night</strong></p>
 						<div class="post-meta mb30">
 							<p>방 설명</p>
 							<table>
-<<<<<<< HEAD
-								<tr>
-=======
 								<tbody><tr>
->>>>>>> origin/kimtaewoo
 									<td>방 면적</td>
 									<td>~~m^2</td>
 								</tr>
@@ -468,36 +353,22 @@ e[s]=e[s]||[],e.zaraz._preTrack=[],e.zaraz.track=(t,r)=>e.zaraz._preTrack.push([
 									<td>침대 사이즈</td>
 									<td>~~cm X ~~cm</td>
 								</tr>
-<<<<<<< HEAD
-							</table>
-						</div>
-						<p><a href="#" class="btn btn-primary" role="button">Reserve now for $29.00</a></p>
-=======
 							</tbody></table>
 						</div>
 						<p><a href="http://localhost:8888/room#" class="btn btn-primary" role="button">Reserve now for $29.00</a></p>
->>>>>>> origin/kimtaewoo
 					</div>
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-6 col-xs-12">
 				<div class="probootstrap-room">
-<<<<<<< HEAD
-					<a href="#"><img src="/resources/img/room/roomGrandDeluxe2.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></a>
-=======
 					<a href="http://localhost:8888/room#"><img src="./Our Room_files/roomGrandDeluxe2.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></a>
->>>>>>> origin/kimtaewoo
 					<div class="text">
 						<h3>Grand Deluxe Room</h3>
 						<p>Starting from <strong>$29.00/Night</strong></p>
 						<div class="post-meta mb30">
 							<p>방 설명</p>
 							<table>
-<<<<<<< HEAD
-								<tr>
-=======
 								<tbody><tr>
->>>>>>> origin/kimtaewoo
 									<td>방 면적</td>
 									<td>~~m^2</td>
 								</tr>
@@ -509,37 +380,23 @@ e[s]=e[s]||[],e.zaraz._preTrack=[],e.zaraz.track=(t,r)=>e.zaraz._preTrack.push([
 									<td>침대 사이즈</td>
 									<td>~~cm X ~~cm</td>
 								</tr>
-<<<<<<< HEAD
-							</table>
-						</div>
-						<p><a href="#" class="btn btn-primary" role="button">Reserve now for $29.00</a></p>
-=======
 							</tbody></table>
 						</div>
 						<p><a href="http://localhost:8888/room#" class="btn btn-primary" role="button">Reserve now for $29.00</a></p>
->>>>>>> origin/kimtaewoo
 					</div>
 				</div>
 			</div>
 			<div class="clearfix visible-sm-block"></div>
 			<div class="col-md-4 col-sm-6 col-xs-12">
 				<div class="probootstrap-room">
-<<<<<<< HEAD
-					<a href="#"><img src="/resources/img/room/roomUltraSuperior2.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></a>
-=======
 					<a href="http://localhost:8888/room#"><img src="./Our Room_files/roomUltraSuperior2.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></a>
->>>>>>> origin/kimtaewoo
 					<div class="text">
 						<h3>Ultra Superior Room</h3>
 						<p>Starting from <strong>$29.00/Night</strong></p>
 						<div class="post-meta mb30">
 							<p>방 설명</p>
 							<table>
-<<<<<<< HEAD
-								<tr>
-=======
 								<tbody><tr>
->>>>>>> origin/kimtaewoo
 									<td>방 면적</td>
 									<td>~~m^2</td>
 								</tr>
@@ -551,36 +408,22 @@ e[s]=e[s]||[],e.zaraz._preTrack=[],e.zaraz.track=(t,r)=>e.zaraz._preTrack.push([
 									<td>침대 사이즈</td>
 									<td>~~cm X ~~cm</td>
 								</tr>
-<<<<<<< HEAD
-							</table>
-						</div>
-						<p><a href="#" class="btn btn-primary" role="button">Reserve now for $29.00</a></p>
-=======
 							</tbody></table>
 						</div>
 						<p><a href="http://localhost:8888/room#" class="btn btn-primary" role="button">Reserve now for $29.00</a></p>
->>>>>>> origin/kimtaewoo
 					</div>
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-6 col-xs-12">
 				<div class="probootstrap-room">
-<<<<<<< HEAD
-					<a href="#"><img src="/resources/img/room/roomPresidential.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></a>
-=======
 					<a href="http://localhost:8888/room#"><img src="./Our Room_files/roomPresidential.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></a>
->>>>>>> origin/kimtaewoo
 					<div class="text">
 						<h3>Presidential Room</h3>
 						<p>Starting from <strong>$29.00/Night</strong></p>
 						<div class="post-meta mb30">
 							<p>방 설명</p>
 							<table>
-<<<<<<< HEAD
-								<tr>
-=======
 								<tbody><tr>
->>>>>>> origin/kimtaewoo
 									<td>방 면적</td>
 									<td>~~m^2</td>
 								</tr>
@@ -592,15 +435,9 @@ e[s]=e[s]||[],e.zaraz._preTrack=[],e.zaraz.track=(t,r)=>e.zaraz._preTrack.push([
 									<td>침대 사이즈</td>
 									<td>~~cm X ~~cm</td>
 								</tr>
-<<<<<<< HEAD
-							</table>
-						</div>
-						<p><a href="#" class="btn btn-primary" role="button">Reserve now for $29.00</a></p>
-=======
 							</tbody></table>
 						</div>
 						<p><a href="http://localhost:8888/room#" class="btn btn-primary" role="button">Reserve now for $29.00</a></p>
->>>>>>> origin/kimtaewoo
 					</div>
 				</div>
 			</div>
@@ -609,12 +446,6 @@ e[s]=e[s]||[],e.zaraz._preTrack=[],e.zaraz.track=(t,r)=>e.zaraz._preTrack.push([
 		<div class="row">
 			<div class="col-md-12 text-center">
 				<h2>Why Choose Us?</h2>
-<<<<<<< HEAD
-				<p class="mb50"><img src="/resources/img/curve.svg" class="svg" alt="Free HTML5 Bootstrap Template"></p>
-			</div>
-			<div class="col-md-4">
-				<div class="service left-icon left-icon-sm probootstrap-animate">
-=======
 				<p class="mb50"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="71px" height="9px" viewBox="0 0 71 9" version="1.1" class="svg replaced-svg">
     <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
     <title>Line</title>
@@ -627,58 +458,37 @@ e[s]=e[s]||[],e.zaraz._preTrack=[],e.zaraz.track=(t,r)=>e.zaraz._preTrack.push([
 			</div>
 			<div class="col-md-4">
 				<div class="service left-icon left-icon-sm probootstrap-animate fadeInUp probootstrap-animated">
->>>>>>> origin/kimtaewoo
 					<div class="icon">
 						<i class="icon-check"></i>
 					</div>
 					<div class="text">
 						<h3>1+ Million Hotel Rooms</h3>
 						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-<<<<<<< HEAD
-						<p><a href="#" class="link-with-icon">Learn More <i class=" icon-chevron-right"></i></a></p>
-=======
 						<p><a href="http://localhost:8888/room#" class="link-with-icon">Learn More <i class=" icon-chevron-right"></i></a></p>
->>>>>>> origin/kimtaewoo
 					</div>
 				</div>
 			</div>
 			<div class="col-md-4">
-<<<<<<< HEAD
-				<div class="service left-icon left-icon-sm probootstrap-animate">
-=======
 				<div class="service left-icon left-icon-sm probootstrap-animate fadeInUp probootstrap-animated">
->>>>>>> origin/kimtaewoo
 					<div class="icon">
 						<i class="icon-check"></i>
 					</div>
 					<div class="text">
 						<h3>Food &amp; Drinks</h3>
 						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-<<<<<<< HEAD
-						<p><a href="#" class="link-with-icon">Learn More <i class=" icon-chevron-right"></i></a></p>
-=======
 						<p><a href="http://localhost:8888/room#" class="link-with-icon">Learn More <i class=" icon-chevron-right"></i></a></p>
->>>>>>> origin/kimtaewoo
 					</div>
 				</div>
 			</div>
 			<div class="col-md-4">
-<<<<<<< HEAD
-				<div class="service left-icon left-icon-sm probootstrap-animate">
-=======
 				<div class="service left-icon left-icon-sm probootstrap-animate fadeInUp probootstrap-animated">
->>>>>>> origin/kimtaewoo
 					<div class="icon">
 						<i class="icon-check"></i>
 					</div>
 					<div class="text">
 						<h3>Airport Taxi</h3>
 						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-<<<<<<< HEAD
-						<p><a href="#" class="link-with-icon">Learn More <i class=" icon-chevron-right"></i></a></p>
-=======
 						<p><a href="http://localhost:8888/room#" class="link-with-icon">Learn More <i class=" icon-chevron-right"></i></a></p>
->>>>>>> origin/kimtaewoo
 					</div>
 				</div>
 			</div>
@@ -692,9 +502,6 @@ e[s]=e[s]||[],e.zaraz._preTrack=[],e.zaraz.track=(t,r)=>e.zaraz._preTrack.push([
 			<div class="col-md-8 col-md-offset-2 probootstrap-section-heading text-center">
 				<h2>Explore our Services</h2>
 				<p class="lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-<<<<<<< HEAD
-				<p><img src="/resources/img/curve.svg" class="svg" alt="Free HTML5 Bootstrap Template"></p>
-=======
 				<p><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="71px" height="9px" viewBox="0 0 71 9" version="1.1" class="svg replaced-svg">
     <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
     <title>Line</title>
@@ -704,16 +511,12 @@ e[s]=e[s]||[],e.zaraz._preTrack=[],e.zaraz.track=(t,r)=>e.zaraz._preTrack.push([
         <path d="M2.5,4.5 C2.5,4.5 4.57503686,7.5 6.65007372,7.5 C8.72511059,7.5 10.8001474,4.5 10.8001474,4.5 C10.8001474,4.5 12.9202938,1.5 14.9502212,1.5 C16.9801485,1.5 19.0100759,4.5 19.0100759,4.5 C19.0100759,4.5 21.0851128,7.5 23.1601496,7.5 C25.2351865,7.5 27.3102234,4.5 27.3102234,4.5 C27.3102234,4.5 29.4303697,1.5 31.4602971,1.5 C33.4902244,1.5 35.5201518,4.5 35.5201518,4.5 C35.5201518,4.5 37.5951887,7.5 39.6702255,7.5 C41.7452624,7.5 43.8202993,4.5 43.8202993,4.5 C43.8202993,4.5 45.9404456,1.5 47.970373,1.5 C50.0003004,1.5 52.0302277,4.5 52.0302277,4.5 C52.0302277,4.5 54.1052646,7.5 56.1803014,7.5 C58.2553383,7.5 60.3303752,4.5 60.3303752,4.5 C60.3303752,4.5 62.4460848,1.5 64.4804489,1.5 C66.514813,1.5 68.549177,4.5 68.549177,4.5" id="Line" stroke="#903749" stroke-width="3"></path>
     </g>
 </svg></p>
->>>>>>> origin/kimtaewoo
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-4">
 				<div class="service left-icon probootstrap-animate">
 					<div class="icon">
-<<<<<<< HEAD
-						<img src="/resources/img/flaticon/svg/001-building.svg" class="svg" alt="Free HTML5 Bootstrap Template by uicookies.com">
-=======
 						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 503.607 503.607" style="enable-background:new 0 0 503.607 503.607;" xml:space="preserve" class="svg replaced-svg">
 <g transform="translate(1 1)">
 	<g>
@@ -769,25 +572,17 @@ e[s]=e[s]||[],e.zaraz._preTrack=[],e.zaraz.track=(t,r)=>e.zaraz._preTrack.push([
 <g>
 </g>
 </svg>
->>>>>>> origin/kimtaewoo
 					</div>
 					<div class="text">
 						<h3>1+ Million Hotel Rooms</h3>
 						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-<<<<<<< HEAD
-						<p><a href="#" class="link-with-icon">Learn More <i class=" icon-chevron-right"></i></a></p>
-=======
 						<p><a href="http://localhost:8888/room#" class="link-with-icon">Learn More <i class=" icon-chevron-right"></i></a></p>
->>>>>>> origin/kimtaewoo
 					</div>
 				</div>
 			</div>
 			<div class="col-md-4">
 				<div class="service left-icon probootstrap-animate">
 					<div class="icon">
-<<<<<<< HEAD
-						<img src="/resources/img/flaticon/svg/003-restaurant.svg" class="svg" alt="Free HTML5 Bootstrap Template by uicookies.com">
-=======
 						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 503.467 503.467" style="enable-background:new 0 0 503.467 503.467;" xml:space="preserve" class="svg replaced-svg">
 <g transform="translate(1 1)">
 	<g>
@@ -832,25 +627,17 @@ e[s]=e[s]||[],e.zaraz._preTrack=[],e.zaraz.track=(t,r)=>e.zaraz._preTrack.push([
 <g>
 </g>
 </svg>
->>>>>>> origin/kimtaewoo
 					</div>
 					<div class="text">
 						<h3>Food &amp; Drinks</h3>
 						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-<<<<<<< HEAD
-						<p><a href="#" class="link-with-icon">Learn More <i class=" icon-chevron-right"></i></a></p>
-=======
 						<p><a href="http://localhost:8888/room#" class="link-with-icon">Learn More <i class=" icon-chevron-right"></i></a></p>
->>>>>>> origin/kimtaewoo
 					</div>
 				</div>
 			</div>
 			<div class="col-md-4">
 				<div class="service left-icon probootstrap-animate">
 					<div class="icon">
-<<<<<<< HEAD
-						<img src="/resources/img/flaticon/svg/004-parking.svg" class="svg" alt="Free HTML5 Bootstrap Template by uicookies.com">
-=======
 						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 503.607 503.607" style="enable-background:new 0 0 503.607 503.607;" xml:space="preserve" class="svg replaced-svg">
 <g transform="translate(1 1)">
 	<g>
@@ -897,16 +684,11 @@ e[s]=e[s]||[],e.zaraz._preTrack=[],e.zaraz.track=(t,r)=>e.zaraz._preTrack.push([
 <g>
 </g>
 </svg>
->>>>>>> origin/kimtaewoo
 					</div>
 					<div class="text">
 						<h3>Airport Taxi</h3>
 						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-<<<<<<< HEAD
-						<p><a href="#" class="link-with-icon">Learn More <i class=" icon-chevron-right"></i></a></p>
-=======
 						<p><a href="http://localhost:8888/room#" class="link-with-icon">Learn More <i class=" icon-chevron-right"></i></a></p>
->>>>>>> origin/kimtaewoo
 					</div>
 				</div>
 			</div>
@@ -919,11 +701,7 @@ e[s]=e[s]||[],e.zaraz._preTrack=[],e.zaraz.track=(t,r)=>e.zaraz._preTrack.push([
 	<div class="text">
 		<div class="probootstrap-animate fadeInUp probootstrap-animated">
 			<h2 class="mt0">Best 5 Star hotel</h2>
-<<<<<<< HEAD
-			<p><img src="/resources/img/curve_white.svg" class="seperator" alt="Free HTML5 Bootstrap Template"></p>
-=======
 			<p><img src="./Our Room_files/curve_white.svg" class="seperator" alt="Free HTML5 Bootstrap Template"></p>
->>>>>>> origin/kimtaewoo
 			<div class="row">
 				<div class="col-md-6">
 					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
@@ -932,11 +710,7 @@ e[s]=e[s]||[],e.zaraz._preTrack=[],e.zaraz.track=(t,r)=>e.zaraz._preTrack.push([
 					<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
 				</div>
 			</div>
-<<<<<<< HEAD
-			<p><a href="#" class="link-with-icon white">Learn More <i class=" icon-chevron-right"></i></a></p>
-=======
 			<p><a href="http://localhost:8888/room#" class="link-with-icon white">Learn More <i class=" icon-chevron-right"></i></a></p>
->>>>>>> origin/kimtaewoo
 		</div>
 	</div>
 </section>
@@ -946,15 +720,9 @@ e[s]=e[s]||[],e.zaraz._preTrack=[],e.zaraz.track=(t,r)=>e.zaraz._preTrack.push([
 		<div class="row">
 			<div class="col-md-4">
 				<div class="probootstrap-footer-widget">
-<<<<<<< HEAD
-					<p class="mt40"><img src="/resources/img/logo_sm.png" class="hires" width="120" height="33" alt="Free HTML5 Bootstrap Template by uicookies.com"></p>
-					<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-					<p><a href="#" class="link-with-icon">Learn More <i class=" icon-chevron-right"></i></a></p>
-=======
 					<p class="mt40"><img src="./Our Room_files/logo_sm.png" class="hires" width="120" height="33" alt="Free HTML5 Bootstrap Template by uicookies.com"></p>
 					<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
 					<p><a href="http://localhost:8888/room#" class="link-with-icon">Learn More <i class=" icon-chevron-right"></i></a></p>
->>>>>>> origin/kimtaewoo
 				</div>
 			</div>
 			<div class="col-md-4">
@@ -962,13 +730,8 @@ e[s]=e[s]||[],e.zaraz._preTrack=[],e.zaraz.track=(t,r)=>e.zaraz._preTrack.push([
 					<h3>Blog</h3>
 					<ul class="probootstrap-blog-list">
 						<li>
-<<<<<<< HEAD
-							<a href="#">
-								<figure class="probootstrap-image"><img src="/resources/img/img_1.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></figure>
-=======
 							<a href="http://localhost:8888/room#">
 								<figure class="probootstrap-image"><img src="./Our Room_files/img_1.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></figure>
->>>>>>> origin/kimtaewoo
 								<div class="probootstrap-text">
 									<h4>River named Duden flows</h4>
 									<span class="meta">August 2, 2017</span>
@@ -977,13 +740,8 @@ e[s]=e[s]||[],e.zaraz._preTrack=[],e.zaraz.track=(t,r)=>e.zaraz._preTrack.push([
 							</a>
 						</li>
 						<li>
-<<<<<<< HEAD
-							<a href="#">
-								<figure class="probootstrap-image"><img src="/resources/img/img_2.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></figure>
-=======
 							<a href="http://localhost:8888/room#">
 								<figure class="probootstrap-image"><img src="./Our Room_files/img_2.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></figure>
->>>>>>> origin/kimtaewoo
 								<div class="probootstrap-text">
 									<h4>River named Duden flows</h4>
 									<span class="meta">August 2, 2017</span>
@@ -992,13 +750,8 @@ e[s]=e[s]||[],e.zaraz._preTrack=[],e.zaraz.track=(t,r)=>e.zaraz._preTrack.push([
 								</a>
 							</li>
 						<li>
-<<<<<<< HEAD
-							<a href="#">
-							<figure class="probootstrap-image"><img src="/resources/img/img_3.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></figure>
-=======
 							<a href="http://localhost:8888/room#">
 							<figure class="probootstrap-image"><img src="./Our Room_files/img_3.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></figure>
->>>>>>> origin/kimtaewoo
 								<div class="probootstrap-text">
 								<h4>River named Duden flows</h4>
 								<span class="meta">August 2, 2017</span>
@@ -1014,11 +767,7 @@ e[s]=e[s]||[],e.zaraz._preTrack=[],e.zaraz.track=(t,r)=>e.zaraz._preTrack.push([
 					<h3>Contact</h3>
 					<ul class="probootstrap-contact-info">
 						<li><i class="icon-location2"></i> <span>198 West 21th Street, Suite 721 New York NY 10016</span></li>
-<<<<<<< HEAD
-						<li><i class="icon-mail"></i><span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f29b9c949db2969d9f939b9cdc919d9f">[email&#160;protected]</a></span></li>
-=======
 						<li><i class="icon-mail"></i><span><a href="http://localhost:8888/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f29b9c949db2969d9f939b9cdc919d9f">[email&nbsp;protected]</a></span></li>
->>>>>>> origin/kimtaewoo
 						<li><i class="icon-phone2"></i><span>+123 456 7890</span></li>
 					</ul>
 				</div>
@@ -1027,37 +776,20 @@ e[s]=e[s]||[],e.zaraz._preTrack=[],e.zaraz.track=(t,r)=>e.zaraz._preTrack.push([
 		<div class="row mt40">
 			<div class="col-md-12 text-center">
 				<ul class="probootstrap-footer-social">
-<<<<<<< HEAD
-					<li><a href=""><i class="icon-twitter"></i></a></li>
-					<li><a href=""><i class="icon-facebook"></i></a></li>
-					<li><a href=""><i class="icon-instagram2"></i></a></li>
-				</ul>
-				<p>
-				<small>&copy; 2017 <a href="https://uicookies.com/" target="_blank">uiCookies:Atlantis</a>. All Rights Reserved. <br> Designed &amp; Developed by <a href="https://uicookies.com/" target="_blank">uicookies.com</a> Demo Images: Unsplash.com &amp; Pexels.com</small>
-=======
 					<li><a href="http://localhost:8888/room"><i class="icon-twitter"></i></a></li>
 					<li><a href="http://localhost:8888/room"><i class="icon-facebook"></i></a></li>
 					<li><a href="http://localhost:8888/room"><i class="icon-instagram2"></i></a></li>
 				</ul>
 				<p>
 				<small>© 2017 <a href="https://uicookies.com/" target="_blank">uiCookies:Atlantis</a>. All Rights Reserved. <br> Designed &amp; Developed by <a href="https://uicookies.com/" target="_blank">uicookies.com</a> Demo Images: Unsplash.com &amp; Pexels.com</small>
->>>>>>> origin/kimtaewoo
 				</p>
 			</div>
 		</div>
 	</div>
 </footer>
 
-<<<<<<< HEAD
-<script src="/resources/js/scripts.min.js"></script>
-<script src="/resources/js/main.min.js"></script>
-<script src="/resources/js/custom.js"></script>
-</body>
-</html>
-=======
   <script src="/resources/js/scripts.min.js"></script>
   <script src="/resources/js/main.min.js"></script>
   <script src="/resources/js/custom.js"></script>
 
 </body></html>
->>>>>>> origin/kimtaewoo

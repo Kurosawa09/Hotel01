@@ -13,9 +13,8 @@
          ,list_Title as listTitle
          ,list_Content as listContent
          ,to_char(list_Date,'yyyy-MM-dd') as listDate
-         ,list_Check as listCheck
       from
-         question_list
+         Question_list
       order by
          list_Num desc     
    </select>
@@ -23,21 +22,29 @@
    <!-- 글 쓰기 -->
    <insert id = "insertList" parameterType = "Question">
    insert into
-           question_list
+           Question_list
            (
               list_Num,
               member_Id,
               member_Nm,
               list_Title,
               list_Content
+              <if test = "savedFilename != null">
+ 			, original_filename
+ 			, saved_filename
+ 			  </if>
            )
            values
            (
-              question_list_seq.nextval,
+              Question_list_seq.nextval,
               #{memberId },
               #{memberNm },
               #{listTitle },
               #{listContent }
+              <if test = "savedFilename != null">
+ 			, #{originalFilename }
+ 			, #{savedFilename }
+ 			</if>
            )
    </insert>   
 
@@ -49,9 +56,11 @@
 			member_Nm as memberNm,
 			list_Title as listTitle,
 			list_Content as listContent,
-			to_char(list_Date,'yyyy-MM-dd') as listDate
-		from
-			question_list
+			to_char(list_Date,'yyyy-MM-dd') as listDate, 
+			original_filename as originalFilename,
+ 			saved_filename as savedFilename
+		from 
+			Question_list
 		where
 			list_Num = #{listNum }	
 	</select>
@@ -59,7 +68,7 @@
 	<!-- 글 수정  -->
  	<update id="updateList" parameterType="Question">
   		update
-			question_list
+			Question_list
 		set
 			list_title = #{listTitle},
 			list_content = #{listContent}
@@ -73,7 +82,7 @@
 	<!-- 글 삭제 --> 
   	<delete id="deleteQuestion" parameterType="int">
 	  	delete from
-	  		question_list
+	  		Question_list
 	  	where
 	  		list_Num = #{listNum }
 	</delete>

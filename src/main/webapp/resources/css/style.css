@@ -26,6 +26,10 @@ body {
   background: #ffffff;
   font-family: "Rubik", sans-serif;
   color: #7e8890;
+  background-image: url('#');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 ::-moz-selection {
