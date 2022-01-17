@@ -37,9 +37,9 @@
         <nav role="navigation" class="probootstrap-nav hidden-xs">
           <ul class="probootstrap-main-nav">
             <li class="active"><a href="/">Home</a></li>
-            <li><a href="rooms.html">Our Rooms</a></li>
+            <li><a href="/room">Our Rooms</a></li>
             <li><a href="reservation.html">Reservation</a></li>
-            <li class="hidden-xs probootstrap-logo-center"><a href="index.html"><img src="/resources/img/logo_md.png" class="hires" width="181" height="50" alt="Free Bootstrap Template by uicookies.com"></a></li>
+            <li class="hidden-xs probootstrap-logo-center"><a href="/"><img src="/resources/img/logo_md.png" class="hires" width="181" height="50" alt="Free Bootstrap Template by uicookies.com"></a></li>
             <li><a href="/question/questionList">íê¸°</a></li>
             
             <c:if test="${empty memberId }">
