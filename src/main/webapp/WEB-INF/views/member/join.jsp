@@ -4,20 +4,18 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="/resources/css/join.css">
-<<<<<<< HEAD
-	<script type = "text/javascript" src="/resources/js/jquery-3.6.0.min.js">
-	function checkForm()
-	{
-		var memberId = document.getElementById("memberID").value; 
-		var memberPw = document.getElementById("memberPW").value;
-		var memberNm = document.getElementById("memberNm").value;
-		var memberTel = document.getElementById("memberTel").value; 
-		var memberEmail = document.getElementById("memberEmail").value; 
-		var memberCode = document.getElementById("memberCode").value; 
-		
-		
-		if ( memberId.length == 0 )
-=======
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text:300,400,700|Rubik:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="/resources/css/styles-merged.css">
+    <link rel="stylesheet" href="/resources/css/style.min.css">
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>uiCookies:Atlantis &mdash; Free Bootstrap Theme, Free Responsive Bootstrap Website Template</title>
+    <meta name="description" content="Free Bootstrap Theme by uicookies.com">
+    <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+  
+</head>	
+	
 	<script type = "text/javascript" src="/resources/js/jquery-3.6.0.min.js"></script>
 	<script type = "text/javascript">
 	
@@ -43,7 +41,7 @@
 			{
 				isIdChecked = confirm("회원 가입이 가능한 ID 입니다. 사용하시겠습니까?");
 				if(isIdChked) // 확인을 누른 경우
-				{// 더이상 값을 변경하지 못하게 입력란을 읽기 전용으로 바꾸고 ID중복검사 버튼을 비활성화
+				{
 					$("#memberID").attr("readonly" , "readonly");
 					$("input:button").attr("disabled", "disabled");
 					
@@ -79,30 +77,24 @@
 		    return (memberEmail != '' && memberEmail != 'undefined' && regex.test(memberEmail));
 		}
 		
-		 if ( memberId.length == 0 )
->>>>>>> origin/kimtaewoo
+		if ( memberId.length == 0 )
 		{
 			alert("ID를 입력해주세요.");
 			return false;
 		} // if
 		
-<<<<<<< HEAD
-=======
 		if ( 3 > memberId.length > 14 )
 		{
 			alert("ID 4글자 이상 13글자 이하로 입력해주세요.");
 			return false;
 		} // if
 		
->>>>>>> origin/kimtaewoo
 		if ( memberPw.length == 0 )
 		{
 			alert("PW를 입력해주세요.");
 			return false;
 		} // if
 		
-<<<<<<< HEAD
-=======
 		if ( memberPw != memberChk )
 		{
 			alert("PW가 다릅니다 확인해 주세요");
@@ -115,23 +107,18 @@
 			return false;
 		} // if
 		
->>>>>>> origin/kimtaewoo
 		if ( memberNm.length == 0 )
 		{
 			alert("Nm를 입력해주세요.");
 			return false;
 		} // if
-<<<<<<< HEAD
-=======
-		
-		
->>>>>>> origin/kimtaewoo
+
 		if ( memberTel.length == 0 )
 		{
 			alert("tel를 입력해주세요.");
 			return false;
 		} // if
-<<<<<<< HEAD
+
 		if ( memberEmail.length == 0 )
 		{
 			alert("Email를 입력해주세요.");
@@ -146,14 +133,55 @@
 		
 		
 			
-		return true;
-	} // checkForm()
-	
+
+	return true;
+}
 	</script>
 </head>
+<body>
+  <!-- START: header -->
+<form>
+  <header role="banner" class="probootstrap-header">
+    <!-- <div class="container"> -->
+    <div class="row">
+        <a href="index.html" class="probootstrap-logo visible-xs"><img src="/resources/img/logo_sm.png" class="hires" width="120" height="33" alt="Free Bootstrap Template by uicookies.com"></a>
+        
+        <a href="#" class="probootstrap-burger-menu visible-xs"><i>Menu</i></a>
+        <div class="mobile-menu-overlay"></div>
 
-  <body width="100%" height="100%">
-    <form action="/member/join" method="post" class="loginForm">
+        <nav role="navigation" class="probootstrap-nav hidden-xs">
+          <ul class="probootstrap-main-nav">
+            <li><a href="rooms.html">호텔방 소개</a></li>
+            <li><a href="reservation.html">예약</a></li>
+            <li class="hidden-xs probootstrap-logo-center"><a href="/"><img src="/resources/img/logo_md.png" class="hires" width="181" height="50" alt="Free Bootstrap Template by uicookies.com"></a></li>
+            <li><a href="/question/questionList">후기</a></li>
+            <c:if test="${empty memberId }">
+            	<li><a href="/member/join">회원가입</a></li>
+            	<li><a href="/member/login">로그인</a></li>
+            </c:if>         
+            <c:if test="${not empty memberId }">
+            	<li><a href="/member/join">회원 정보 수정</a></li>
+            	<li><a href="/member/logout">Logout</a></li>
+            </c:if>
+
+          </ul>
+          <div class="extra-text visible-xs">
+            <a href="#" class="probootstrap-burger-menu"><i>Menu</i></a>
+            <h5>Connect With Us</h5>
+            <ul class="social-buttons">
+              <li><a href="#"><i class="icon-twitter"></i></a></li>
+              <li><a href="#"><i class="icon-facebook2"></i></a></li>
+              <li><a href="#"><i class="icon-instagram2"></i></a></li>
+            </ul>
+          </div>
+        </nav>
+        </div>
+    <!-- </div> -->
+  </header>
+  </form>
+  <!-- END: header -->
+  
+  <form class = "loginForm" action = "/question/questionListWrite" method = "post">
       <h2>Sign Up</h2>
       <div class="idForm">
         <input type="text" class="id" placeholder="ID" id = "memberId">
@@ -173,63 +201,28 @@
       <div class="passForm">
         <input type="text" class="email" placeholder="email" id="memberEmail">
       </div>
-      
-      <button type="submit" class="btn" button ="button()">
-        Sign Up
-=======
-		
-		if ( memberTel.length < 11)
-		{
-			alert("전화번호를 정확히 입력해주세요.");
-			return false;
-		} // if
-		
-		if ( memberEmail.length == 0 )
-		{	
-			alert("Email를 입력해주세요.");
-			return false;
-		} // if
-
- 
-		 if ( ! email_check(memberEmail) ) {
-			 alert("Email를 입력해주세요.");
-			}
-			
-		return true;
-	} // checkForm()
-	</script>
-	
-</head>
-
-  <body width="100%" height="100%">
-    <form action="/member/join" method="post" class="loginForm" onsubmit = "return checkForm();">
-      <h2>Sign Up</h2>
-      <div class="idForm">
-        <input type="text" class="id" placeholder="ID" id = "memberId" name = "memberId" oninput="checkId()">   	
-      </div>
-      <div class="passForm">
-        <input type="password" class="pw" placeholder="PW" id = "memberPw"  name="memberPw">
-      </div>
-      <div class="passForm">
-        <input type="password" class="pwChk" id="memberChk" placeholder="PWChk" >
-      </div>
-      <div class="passForm">
-        <input type="text" class="name" placeholder="Name" id = "memberNm" name="memberNm">
-      </div>
-      <div class="passForm">
-        <input type="text" class="tel" placeholder="tel" id = "memberTel" name="memberTel">
-      </div>
-      <div class="passForm">
-        <input type="text" class="email" placeholder="email" id ="memberEmail" name="memberEmail">
-      </div>
-      <input type = "button" value = "ID중복검사" onclick = "idChk();"><br>
       <button type="submit" class="btn">
-               회원가입	
->>>>>>> origin/kimtaewoo
+      	회원가입
       </button>
+    
       <div class="bottomText">
-        Find ID or password <a href="#">보류</a>
+        Find ID or password 
+        <a href="#">보류</a>
+      </div> 
+      <div class="row mt40">
+        <div class="col-md-12 text-center">
+          <ul class="probootstrap-footer-social">
+            <li><a href=""><i class="icon-twitter"></i></a></li>
+            <li><a href=""><i class="icon-facebook"></i></a></li>
+            <li><a href=""><i class="icon-instagram2"></i></a></li>
+          </ul>
+          <p>
+            <small>&copy; 2017 <a href="https://uicookies.com/" target="_blank">uiCookies:Atlantis</a>. All Rights Reserved. <br> Designed &amp; Developed by <a href="https://uicookies.com/" target="_blank">uicookies.com</a> Demo Images: Unsplash.com &amp; Pexels.com</small>
+          </p>
+        </div>
       </div>
-    </form>
+   </form>
   </body>
+  
+  
 </html>

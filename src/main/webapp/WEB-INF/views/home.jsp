@@ -16,11 +16,6 @@
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text:300,400,700|Rubik:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="/resources/css/styles-merged.css">
     <link rel="stylesheet" href="/resources/css/style.min.css">
-
-    <!--[if lt IE 9]>
-      <script src="js/vendor/html5shiv.min.js"></script>
-      <script src="js/vendor/respond.min.js"></script>
-    <![endif]-->
   </head>
   <body width="100%" height="100%">
 
@@ -36,27 +31,16 @@
 
         <nav role="navigation" class="probootstrap-nav hidden-xs">
           <ul class="probootstrap-main-nav">
-            <li class="active"><a href="/">Home</a></li>
-            <li><a href="rooms.html">Our Rooms</a></li>
-            <li><a href="reservation.html">Reservation</a></li>
-            <li class="hidden-xs probootstrap-logo-center"><a href="index.html"><img src="/resources/img/logo_md.png" class="hires" width="181" height="50" alt="Free Bootstrap Template by uicookies.com"></a></li>
-<<<<<<< HEAD
+            <li><a href="rooms.html">호텔방 소개</a></li>
+            <li><a href="reservation.html">예약</a></li>
+            <li class="hidden-xs probootstrap-logo-center"><a href="/"><img src="/resources/img/logo_md.png" class="hires" width="181" height="50" alt="Free Bootstrap Template by uicookies.com"></a></li>
             <li><a href="/question/questionList">후기</a></li>
-=======
-            <li><a href="/question/questionList">íê¸°</a></li>
->>>>>>> origin/kimtaewoo
-            
             <c:if test="${empty memberId }">
-            	<li><a href="/member/join">Sign up</a></li>
-            	<li><a href="/member/login">Sign in</a></li>
-            </c:if>
-            
+            	<li><a href="/member/join">회원가입</a></li>
+            	<li><a href="/member/login">로그인</a></li>
+            </c:if>         
             <c:if test="${not empty memberId }">
-<<<<<<< HEAD
             	<li><a href="/member/join">회원 정보 수정</a></li>
-=======
-            	<li><a href="/member/join">íì ì ë³´ ìì </a></li>
->>>>>>> origin/kimtaewoo
             	<li><a href="/member/logout">Logout</a></li>
             </c:if>
 
@@ -370,6 +354,8 @@
       </div>
     </div>
   </section>
+  
+  <!-- 여기 위 아님 -->
 
   <!-- START: footer -->
   <footer role="contentinfo" class="probootstrap-footer">
@@ -454,8 +440,4 @@
 
 
   </body>
-<<<<<<< HEAD
-=======
->>>>>>> origin/hataein
->>>>>>> origin/kimtaewoo
 </html>
