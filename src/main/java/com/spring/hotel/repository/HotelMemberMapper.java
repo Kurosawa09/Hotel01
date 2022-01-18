@@ -1,5 +1,6 @@
 package com.spring.hotel.repository;
 
+import com.spring.hotel.vo.BookingVO;
 import com.spring.hotel.vo.HotelMemberVO;
 
 public interface HotelMemberMapper {
