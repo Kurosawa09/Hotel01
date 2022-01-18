@@ -7,10 +7,13 @@
 			<typeAlias type="com.spring.hotel.vo.HotelMemberVO" alias="Member"/>
 			<typeAlias type="com.spring.hotel.vo.QuestionListVO" alias="Question"/>
 			<typeAlias type="com.spring.hotel.vo.ReplyVO" alias="Reply"/>
+			<typeAlias type="com.spring.hotel.vo.BookingVO" alias="Booking"/>
 	</typeAliases>
 	
 	<mappers>
 			<mapper resource="mappers/memberMapper.xml"/>
 			<mapper resource="mappers/questionMapper.xml"/>
+			<mapper resource="mappers/bookingMapper.xml"/>
+			
 	</mappers>
 </configuration>

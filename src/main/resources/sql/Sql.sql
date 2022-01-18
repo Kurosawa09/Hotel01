@@ -68,3 +68,42 @@ create table reply(
 );
 
 create sequence reply_seq nocache;
+
+-- 4 방 테이블
+create table hotel_room(
+    room_num    number(2)       default 0,
+    room_type   varchar2(30)    primary key,
+    room_price  number(30)      default 0,
+    room_status number(2)       default 0
+);
+-- 4.1 방 테이블을 만든 후 아래 insert문을 실행하세요.
+	insert into
+	    hotel_room(
+        room_num,
+        room_type,
+        room_price,
+   		room_status
+	    )
+		values(
+        1,
+        'single',
+        70000,
+        0
+	    );
+
+
+-- 5 예약 테이블 
+create table booking(
+	booking_num         number         primary key,
+    member_id           varchar2(30)   constraint memberId_qe_fk2 references hotel_member(member_id) on delete cascade,
+    ROOM_TYPE           varchar2(30)   constraint roomType_bo_fk references hotel_room(room_type) on delete cascade,
+    booking_START       date not null,
+    booking_END         date not null,
+    adult               number(2) default 0,
+    child               number(2) default 0,
+    booking_status      number(2) default 0,
+    booking_date        date      default sysdate
+);
+
+create sequence booking_seq nocache;
+

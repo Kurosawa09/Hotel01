@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="kr">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,14 +9,9 @@
     <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
     
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text:300,400,700|Rubik:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles-merged.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="/resources/css/styles-merged.css">
+    <link rel="stylesheet" href="/resources/css/style.min.css">
     <link rel="stylesheet" href="css/custom.css">
-
-    <!--[if lt IE 9]>
-      <script src="js/vendor/html5shiv.min.js"></script>
-      <script src="js/vendor/respond.min.js"></script>
-    <![endif]-->
   </head>
   <body>
 
@@ -78,35 +73,14 @@
       <div class="row probootstrap-gutter40">
         <div class="col-md-8">
           <h2 class="mt0">Reservation Form</h2>
-          <form action="#" method="post" class="probootstrap-form">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label for="fname">First Name</label>
-                  <input type="text" class="form-control" id="fname" name="fname">
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label for="lname">Last Name</label>
-                  <input type="text" class="form-control" id="lname" name="lname">
-                </div>
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <div class="form-field">
-                <i class="icon icon-mail"></i>
-                <input type="email" class="form-control" id="email" name="email">
-              </div>
-            </div>
+          <form action="/booking/booking" method="post" class="probootstrap-form">
             <div class="form-group">
               <label for="room">Room</label>
               <div class="form-field">
                 <i class="icon icon-chevron-down"></i>
-                <select name="room" id="room" class="form-control">
+                <select name="roomType" id="room" class="form-control">
                   <option value="">Select a Room</option>
-                  <option value="1">Classic Room</option>
+                  <option value="single">Classic Room</option>
                   <option value="2">Ultra Superior Room</option>
                   <option value="3">Grand Deluxe Room</option>
                 </select>
@@ -118,7 +92,7 @@
                   <label for="date-arrival">Arrival</label>
                   <div class="form-field">
                     <i class="icon icon-calendar2"></i>
-                    <input type="text" class="form-control" id="date-arrival" name="date-arrival">
+                    <input type="text" class="form-control" id="date-arrival" name="bookingStart">
                   </div>
                 </div>
               </div>
@@ -127,7 +101,7 @@
                   <label for="date-departure">Departure</label>
                   <div class="form-field">
                     <i class="icon icon-calendar2"></i>
-                    <input type="text" class="form-control" id="date-departure" name="date-departure">
+                    <input type="text" class="form-control" id="date-departure" name="bookingEnd">
                   </div>
                 </div>
               </div>
@@ -139,7 +113,7 @@
                   <label for="adults">Adults</label>
                   <div class="form-field">
                     <i class="icon icon-chevron-down"></i>
-                    <select name="adults" id="adults" class="form-control">
+                    <select name="adult" id="adults" class="form-control">
                       <option value="">Number of Adults</option>
                       <option value="1">1</option>
                       <option value="2">2</option>
@@ -154,7 +128,7 @@
                   <label for="children">Children</label>
                   <div class="form-field">
                     <i class="icon icon-chevron-down"></i>
-                    <select name="children" id="children" class="form-control">
+                    <select name="child" id="children" class="form-control">
                       <option value="">Number of Children</option>
                       <option value="1">1</option>
                       <option value="2">2</option>
@@ -276,9 +250,9 @@
   </footer>
   <!-- END: footer -->
   
-  <script src="js/scripts.min.js"></script>
-  <script src="js/main.min.js"></script>
-  <script src="js/custom.js"></script>
+  <script src="/resources/js/scripts.min.js"></script>
+  <script src="/resources/js/main.min.js"></script>
+  <script src="/resources/js/custom.js"></script>
 
   </body>
 </html>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 예약 확인 --> 
+<mapper namespace="com.spring.hotel.repository.BookingMapper">
+	
+	<insert id = "booking" parameterType = "Booking">
+	insert into
+    	booking(
+    		booking_num,
+        	member_id,
+        	ROOM_TYPE,
+	        booking_START,
+	        booking_END,
+	        adult,
+	        child,
+	        booking_status
+        )
+		values(
+			booking_seq.nextval,
+			#{memberId },
+			#{roomType },
+			to_date(#{bookingStart },'mm/dd/yyyy'),
+			to_date(#{bookingEnd },'mm/dd/yyyy'),
+			#{adult },
+			#{child },
+			1
+        )
+	</insert>
+
+	<!-- 내 예약 조회 -->
+	<select id="selectMyList" parameterType="String" resultType="Booking">
+	    select
+			booking_num as bookingNum,
+			member_id as memberId,
+	    	ROOM_TYPE as roomType,
+	    	booking_START as bookingStart,
+	    	booking_END as bookingEnd,
+	    	adult as adult,
+	    	child as child,
+	    	booking_status as bookingStatus,
+	    	booking_date as bookingDate
+	    from
+	    	booking
+	    where
+			member_id = #{memberId }
+	    order by
+	    	booking_Num desc
+	</select>
+	
+</mapper>
