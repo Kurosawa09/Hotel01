@@ -4,7 +4,6 @@
   padding: 0px;
   text-decoration: none;
   font-family:sans-serif;
-
 }
 
 .form
@@ -29,24 +28,24 @@ body
 
 .td1
 {
-  width:60px;
-  height:30px;
+  width:100px;
+  height:60x;
   text-align:center;
   background-color:khaki;
 }
 
 .td2
 {
-  width:60px;
-  height:30px;
+  width:100px;
+  height:60px;
   text-align:center;
   background-color:khaki;
 }
 
 .td3
 {
-  width:1200px;
-  height:1200px;
+  width:1000px;
+  height:1000px;
   border:none;
   outline:none;
   color: #636e72;
@@ -57,8 +56,8 @@ body
 
 .td4
 {
-  width:1200px;
-  height:1200px;
+  width:1000px;
+  height:1000px;
   border:none;
   outline:none;
   color: #636e72;

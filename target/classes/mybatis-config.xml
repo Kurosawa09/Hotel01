@@ -7,6 +7,7 @@
 			<typeAlias type="com.spring.hotel.vo.HotelMemberVO" alias="Member"/>
 			<typeAlias type="com.spring.hotel.vo.QuestionListVO" alias="Question"/>
 			<typeAlias type="com.spring.hotel.vo.ReplyVO" alias="Reply"/>
+			<typeAlias type="com.spring.hotel.vo.RoomVO" alias="Room"/>
 			<typeAlias type="com.spring.hotel.vo.BookingVO" alias="Booking"/>
 	</typeAliases>
 	

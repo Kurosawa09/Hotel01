@@ -25,5 +25,20 @@
 	<context:component-scan base-package="com.spring.hotel" />
 	
 	
+	<beans:bean id="lI" class="com.spring.hotel.util.LoginInterceptor"></beans:bean>
+	
+	<interceptors>
+		<interceptor>
+			<mapping path="/member/memberInfo" />
+			<mapping path="/booking/bookingList" />
+			<mapping path="/booking/booking" />
+			<mapping path="/booking/roomBooking" />
+			<mapping path="/question/questionListWrite" />
+			<mapping path="/question/questionListUpdate" />
+			<!-- 위의 경로들은 다음의 인터셉터를 경유한다. -->
+			<beans:ref bean="lI" />
+		</interceptor>
+	</interceptors>
+	
 	
 </beans:beans>

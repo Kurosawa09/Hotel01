@@ -1,76 +1,62 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+  <%@ page language="java" contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" %>
+    <!DOCTYPE html>
+    <html>
 
-<head>
-    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:300,400,700|Rubik:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="/resources/css/styles-merged.css">
-    <link rel="stylesheet" href="/resources/css/style.min.css">
-    <link rel="stylesheet" type="text/css" href="/resources/css/login.css">
-    
-</head>
+    <head>
+      <title>로그인</title>
+      <link href="https://fonts.googleapis.com/css?family=Crimson+Text:300,400,700|Rubik:300,400,700,900"
+        rel="stylesheet">
+      <link rel="stylesheet" href="/resources/css/styles-merged.css">
+      <link rel="stylesheet" href="/resources/css/style.min.css">
+      <link rel="stylesheet" type="text/css" href="/resources/css/login.css">
+      <script type="text/javascript" src="/resources/js/jquery-3.6.0.min.js"></script>
+      <script type="text/javascript" src="/resources/js/custom/login.js"></script>
+    </head>
 
-<body width="100%" height="100%">
+    <body>
+      <%@ include file="/WEB-INF/views/menuBar/loginMenuBar.jsp" %>
 
-  <!-- START: header -->
-
-  <header role="banner" class="probootstrap-header">
-    <!-- <div class="container"> -->
-    <div class="row">
-        <a href="index.html" class="probootstrap-logo visible-xs"><img src="/resources/img/logo_sm.png" class="hires" width="120" height="33" alt="Free Bootstrap Template by uicookies.com"></a>
-        
-        <a href="#" class="probootstrap-burger-menu visible-xs"><i>Menu</i></a>
-        <div class="mobile-menu-overlay"></div>
-
-        <nav role="navigation" class="probootstrap-nav hidden-xs">
-          <ul class="probootstrap-main-nav">
-            <li><a href="/">Home</a></li>
-            <li><a href="rooms.html">Our Rooms</a></li>
-            <li><a href="reservation.html">Reservation</a></li>
-            <li class="hidden-xs probootstrap-logo-center"><a href="index.html"><img src="/resources/img/logo_md.png" class="hires" width="181" height="50" alt="Free Bootstrap Template by uicookies.com"></a></li>
-            <li><a href="/question/questionList">후기</a></li>
-            
-            <c:if test="${empty memberId }">
-            	<li><a href="/member/join">Sign up</a></li>
-            	<li class="active"><a href="/member/login">Sign in</a></li>
-            </c:if>
-            
-            <c:if test="${not empty memberId }">
-            	<li><a href="/member/join">회원 정보 수정</a></li>
-            	<li><a href="/member/logout">Logout</a></li>
-            </c:if>
-
-          </ul>
-          <div class="extra-text visible-xs">
-            <a href="#" class="probootstrap-burger-menu"><i>Menu</i></a>
-            <h5>Connect With Us</h5>
-            <ul class="social-buttons">
-              <li><a href="#"><i class="icon-twitter"></i></a></li>
-              <li><a href="#"><i class="icon-facebook2"></i></a></li>
-              <li><a href="#"><i class="icon-instagram2"></i></a></li>
-            </ul>
+        <br>
+        <form action="/member/login" method="post" class="loginForm" onsubmit="return formChk();">
+          <h2>로그인</h2>
+          <div class="idForm">
+            <input type="text" class="id" name="memberId" id="memberId" placeholder="ID">
           </div>
-        </nav>
-        </div>
-    <!-- </div> -->
-  </header>
-  <!-- END: header -->
-	<form action="/member/login" method="post" class="loginForm">
-		<h2>Sign in</h2>
-     	<div class="idForm">
-        	<input type="text" class ="id" name = "memberId" placeholder="ID">
-        </div>
-		<div class="passForm">
-			<input type="password" class = "pw" name = "memberPw" placeholder="PW">
-	    </div>
-	    <button type="submit" class="btn">
-	    	Sign In
-	    </button>
-	    <div class="bottomText">
-     		Don't you have ID? <a href="#">sign up</a>
-     	</div>
-    </form>
-</body>				
-</html>
+          <div class="passForm">
+            <input type="password" class="pw" name="memberPw" id="memberPw" placeholder="PW">
+          </div>
+          <button type="submit" class="btn">
+            로그인하기
+          </button><br>
+          <span style="color : red;">${error1}</span>
+          <div style="color : red;">${error2}</div>
+          <br>
+          <div class="bottomText">
+            <a href="/member/join">회원가입</a>
+          </div>
+          <div class="bottomText">
+            <a href="/member/memberFind" id="memberFind"><br>아이디/비밀번호 찾기</a>
+          </div>
+
+          <c:if test="${empty error1 }">
+            <br><br>
+          </c:if>
+          <div class="row mt40">
+            <div class="col-md-12 text-center">
+              <ul class="probootstrap-footer-social">
+                <li><a href=""><i class="icon-twitter"></i></a></li>
+                <li><a href=""><i class="icon-facebook"></i></a></li>
+                <li><a href=""><i class="icon-instagram2"></i></a></li>
+              </ul>
+              <p>
+                <small>&copy; 2017 <a href="https://uicookies.com/" target="_blank">uiCookies:Atlantis</a>. All Rights
+                  Reserved. <br> Designed &amp; Developed by <a href="https://uicookies.com/"
+                    target="_blank">uicookies.com</a> Demo Images: Unsplash.com &amp; Pexels.com</small>
+              </p>
+            </div>
+          </div>
+        </form>
+    </body>
+
+    </html>

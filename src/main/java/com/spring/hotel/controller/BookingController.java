@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.spring.hotel.service.BookingService;
 import com.spring.hotel.vo.BookingVO;
-import com.spring.hotel.vo.QuestionListVO;
+import com.spring.hotel.vo.RoomVO;
 
 @Controller
 @RequestMapping(value = "/booking")
@@ -34,73 +34,104 @@ public class BookingController {
 
 	@RequestMapping(value = "/booking", method = RequestMethod.GET)
 	public String booking() {
-		logger.info("booking(GET)메소드 실행");
+		logger.info("booking 메소드 실행(GET)");
 
 		return "booking/booking";
 	}
 
-	@RequestMapping(value = "/booking", method = RequestMethod.POST)
-	public String booking(String roomType, String bookingStart, String bookingEnd, int adult, int child,
-			HttpSession session) {
-		logger.info("booking(POST)메소드 실행");
+	// 예약 1
+	@RequestMapping(value = "/roomBooking", method = RequestMethod.POST)
+	public String booking(BookingVO booking, HttpSession session, Model model) {
+		logger.info("roomBooking 메소드 실행(POST)");
+		model.addAttribute("booking", booking);
 
-		
-		  logger.info("bookingStart : {}", bookingStart);
-		  logger.info("bookingEnd : {}", bookingEnd);
-		 /* 
-		 * try { String strDate = bookingStart; String str1 = strDate.substring(6,10);
-		 * String str2 = strDate.substring(0,2); String str3 = strDate.substring(3,5);
-		 * 
-		 * logger.info("str : {} ", str1); logger.info("str : {}", str2);
-		 * logger.info("str : {}", str3);
-		 * 
-		 * strDate = str1 + str2 + str3; logger.info("최종 : {} ", strDate);
-		 * 
-		 * 
-		 * 
-		 * SimpleDateFormat dtFormat = new SimpleDateFormat("yyyyMMdd");
-		 * SimpleDateFormat newDtFormat = new SimpleDateFormat("yyyy/MM/dd"); // String
-		 * 타입을 Date 타입으로 변환 Date formatDate = dtFormat.parse(strDate); bookingStart =
-		 * newDtFormat.format(formatDate); System.out.println("포맷 후 : " + bookingStart);
-		 * } catch (ParseException e) { e.printStackTrace(); }
-		 * 
-		 * try { String strDate = bookingEnd; String str4 = strDate.substring(6,10);
-		 * String str5 = strDate.substring(0,2); String str6 = strDate.substring(3,5);
-		 * 
-		 * logger.info("str : {} ", str4); logger.info("str : {}", str5);
-		 * logger.info("str : {}", str6);
-		 * 
-		 * strDate = str4 + str5 + str6; logger.info("최종 : {} ", strDate);
-		 * 
-		 * SimpleDateFormat dtFormat = new SimpleDateFormat("yyyyMMdd");
-		 * SimpleDateFormat newDtFormat = new SimpleDateFormat("yyyy/MM/dd"); // String
-		 * 타입을 Date 타입으로 변환 Date formatDate = dtFormat.parse(strDate); bookingEnd =
-		 * newDtFormat.format(formatDate); System.out.println("포맷 후 : " + bookingEnd); }
-		 * catch (ParseException e) { e.printStackTrace(); }
-		 * 
-		 * 
-		 * logger.info("bookingStart2 : {}", bookingStart);
-		 * logger.info("bookingEnd2 : {}", bookingEnd);
-		 */
-		
+		booking.setRoomType("Classic");
+		RoomVO Classic = service.readRoom(booking.getRoomType());
+		if (Classic.getRoomStatus() == 0) {
+			model.addAttribute("impossible1", "impossible1");
+		}
+
+		booking.setRoomType("Deluxe");
+		RoomVO Deluxe = service.readRoom(booking.getRoomType());
+		if (Deluxe.getRoomStatus() == 0) {
+			model.addAttribute("impossible2", "impossible2");
+		}
+
+		booking.setRoomType("Superior");
+		RoomVO Superior = service.readRoom(booking.getRoomType());
+		if (Superior.getRoomStatus() == 0) {
+			model.addAttribute("impossible3", "impossible3");
+		}
+		booking.setRoomType("Premier");
+		RoomVO Premier = service.readRoom(booking.getRoomType());
+		if (Premier.getRoomStatus() == 0) {
+			model.addAttribute("impossible4", "impossible4");
+		}
+
+		booking.setRoomType("Deluxe_Suite");
+		RoomVO DeluxeSuite = service.readRoom(booking.getRoomType());
+		if (DeluxeSuite.getRoomStatus() == 0) {
+			model.addAttribute("impossible5", "impossible5");
+		}
+
+		booking.setRoomType("Family_Suite");
+		RoomVO FamilySuite = service.readRoom(booking.getRoomType());
+		if (FamilySuite.getRoomStatus() == 0) {
+			model.addAttribute("impossible6", "impossible6");
+		}
+
+		return "booking/roomBooking";
+	}
+
+	// 예약 2
+	@RequestMapping(value = "/completeBooking", method = RequestMethod.POST)
+	public String roomBooking(BookingVO booking, HttpSession session, Model model) {
+		logger.info("completeBooking(POST)메소드 실행");
+
 		String memberId = (String) session.getAttribute("memberId");
+		String path = service.roomBooking(booking, memberId);
+		boolean result = service.roomStatusDown(booking.getRoomType());
 
-		String path = service.booking(roomType, bookingStart, bookingEnd, adult, child, memberId);
-
+		if (result) {
+			logger.info("예약 성공");
+		} else {
+			logger.info("예약 실패");
+		}
 		return path;
 	}
-	
-	// 게시글 가져오기
+
+	// 내 예약 조회
 	@RequestMapping(value = "/bookingList", method = RequestMethod.GET)
-	public String questionList(Model model, HttpSession session) {
+	public String bookingList(Model model, HttpSession session) {
 		logger.info("questionList 메소드 실행(GET)");
-		
+
 		String memberId = (String) session.getAttribute("memberId");
-		
 		ArrayList<BookingVO> bookingList = service.selectMyList(memberId);
-		logger.info("memberId : {}", memberId);
-		logger.info("bookingList:{}", bookingList);
 		model.addAttribute("bookingList", bookingList);
+
 		return "booking/bookingList";
 	}
+
+	// 예약 취소
+	@RequestMapping(value = "/cancleBooking", method = RequestMethod.POST)
+	public String cancleBooking(String memberId, String roomType, int bookingNum) {
+		logger.info("cancleBooking(POST)실행");
+
+		boolean result1 = service.cancleBooking(memberId, bookingNum);
+		boolean result2 = service.roomStatusUp(roomType);
+
+		if (result1) {
+			logger.info("예약 취소 완료");
+		} else {
+			logger.info("예약 취소 실패");
+		}
+		if (result2) {
+			logger.info("방 개수 증가 성공");
+		} else {
+			logger.info("방 개수 증가 실패");
+		}
+
+		return "redirect:/booking/bookingList";
+	}
+
 }

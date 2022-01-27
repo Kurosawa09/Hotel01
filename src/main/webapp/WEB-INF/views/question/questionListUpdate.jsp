@@ -1,166 +1,110 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
-<!DOCTYPE HTML>
-<!--
-	Aesthetic by gettemplates.co
-	Twitter: http://twitter.com/gettemplateco
-	URL: http://gettemplates.co
--->
-<html>
-	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Q&A</title>
-	<script>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+	<%@ page language="java" contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" %>
+		<!DOCTYPE html>
+		<html>
 
-//가입폼 확인
-function formCheck() {
-	var title = document.getElementById('title14');
-	var content = document.getElementById('content23');
-	
-	if (title.value == '') {
-		alert("제목을 입력하세요.");
-		return false;
-	}
-	if (content.value == '') {
-		alert("내용을 입력하세요.");
-		return false;
-	}
-	return true;
-}
-</script>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Free HTML5 Website Template by GetTemplates.co" />
-	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
-	<meta name="author" content="GetTemplates.co" />
+		<head>
+			<meta charset="UTF-8">
+			<title>${questionList.listTitle}</title>
 
-  	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
+			<head>
+				<link rel="stylesheet" type="text/css" href="/resources/css/board.css">
+				<link href="https://fonts.googleapis.com/css?family=Crimson+Text:300,400,700|Rubik:300,400,700,900"
+					rel="stylesheet">
+				<link rel="stylesheet" href="/resources/css/styles-merged.css">
+				<link rel="stylesheet" href="/resources/css/style.min.css">
+				<meta charset="utf-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1">
+				<title>글 수정</title>
+				<meta name="description" content="Free Bootstrap Theme by uicookies.com">
+				<meta name="keywords"
+					content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+				<script type="text/javascript" src="/resources/js/jquery-3.6.0.min.js"></script>
+				<script type="text/javascript">
+					function formCheck() {
+						var listTitle = document.getElementById('listTitle');
+						var listContent = document.getElementById('listContent');
+						if (listTitle.value == '') {
+							alert("제목을 입력하세요.");
+							return false;
+						}
+						if (listContent.value == '') {
+							alert("내용을 입력하세요.");
+							return false;
+						}
+						return true;
+					}
+				</script>
+			</head>
 
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
-	
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="/resources/css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="/resources/css/icomoon.css">
-	<!-- Themify Icons-->
-	<link rel="stylesheet" href="/resources/css/themify-icons.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="/resources/css/bootstrap.css">
+		<body>
+			<%@ include file="/WEB-INF/views/menuBar/questionMenuBar.jsp" %>
+				<form>
+					<div class="textForm">
+						<h2>후기 글 작성</h2>
 
-	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="/resources/css/magnific-popup.css">
-
-	<!-- Bootstrap DateTimePicker -->
-	<link rel="stylesheet" href="/resources/css/bootstrap-datetimepicker.min.css">
-
-	<!-- Owl Carousel  -->
-	<link rel="stylesheet" href="/resources/css/owl.carousel.min.css">
-	<link rel="stylesheet" href="/resources/css/owl.theme.default.min.css">
-
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="/resources/css/style.css">
-
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-
-	</head>
-	<body>		
-	
-	<header id="gtco-header" class="gtco-cover gtco-cover-xs" role="banner" style="background-image: url(resources/images/img_bg_4.jpg)" data-stellar-background-ratio="0.5">
-		<div class="overlay"></div>
-		<div class="gtco-container">
-			<div class="row">
-				<div class="col-md-12 col-md-offset-0 text-center">
-
-					<div class="row row-mt-15em">
-						<div class="col-md-12 mt-text animate-box" data-animate-effect="fadeInUp">
-							<h1 class="cursive-font">고객의 소리</h1>		
-						</div>
-						
+						<p>저희 문라이트는 언제나 고객님의 목소리를 듣고 있습니다.<br>
+							소중한 의견은 앞으로 더 나은 서비스를 만드는데 힘이 될 수 있습니다.</p>
 					</div>
-					
-				</div>
-			</div>
-		</div>
-	</header>
-	
-	
-	<div class="gtco-section">
-		<div class="gtco-container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="col-md-6 animate-box">
-					<form action="/question/updateQuestion" method="post">
+				</form>
+
+
+				<form action="/question/updateQuestion" method="post" class="form" enctype="multipart/form-data"
+					onsubmit="return formCheck();">
 					<input type="hidden" name="listNum" value="${questionList.listNum }">
-					
-						<div class="row form-group">
+					<div class="container">
+						<div class="row">
 							<div class="col-md-12">
-								<label class="sr-only" for="listTitle">제목</label>
-								<input type="text" name="listTitle" class="form-control" placeholder="제목입력해" value = "${questionList.listTitle}">
+								<table border="1" class="table">
+									<tr>
+										<td class="td1">제목</td>
+										<td class="td3">
+											<input class="td3" type="text" id="listTitle" name="listTitle"
+												placeholder="문의 내용을 상의하게 적어 주시면 답변에 도움이 됩니다."
+												value="${questionList.listTitle}">
+										</td>
+									</tr>
+									<tr>
+										<td class="td2">내용</td>
+										<td class="td4">
+											<input class="td4" id="listContent" name="listContent"
+												placeholder="불건전한 내용 작성시 고지 없이 삭제 되오니 주의 바랍니다."
+												value="${questionList.listContent}">
+										</td>
+									</tr>
+									<tr>
+										<td class="td2">사진</td>
+										<td>
+											<input type="file" name="uploadFile"
+												value="${questionList.originalFilename}">
+										</td>
+									<tr>
+								</table>
+								<button type="submit" class="btn btn-primary">
+									작성하기
+								</button>
+								<button type="button" class="btn btn-primary"
+									onclick="location.href='/question/question?listNum=${questionList.listNum }'">
+									취소하기
+								</button>
 							</div>
-							
 						</div>
-						
-						<div class="row form-group">
-							<div class="col-md-12">
-								<label class="sr-only" for="listContent">내용</label>
-								<textarea  name="listContent" cols="30" rows="10" class="form-control" placeholder="내용입력해" >${questionList.listContent}</textarea>
-							</div>
-						</div>
-						<div class="form-group">
-							<input type="submit" value="글 쓰기" class="btn btn-primary">
-						</div>
-
-					</form>		
+					</div>
+				</form>
+				<div class="row mt40">
+					<div class="col-md-12 text-center">
+						<ul class="probootstrap-footer-social">
+							<li><a href=""><i class="icon-twitter"></i></a></li>
+							<li><a href=""><i class="icon-facebook"></i></a></li>
+							<li><a href=""><i class="icon-instagram2"></i></a></li>
+						</ul>
+						<p>
+							<small>&copy; 2017 <a href="https://uicookies.com/" target="_blank">uiCookies:Atlantis</a>.
+								All Rights Reserved. <br> Designed &amp; Developed by <a href="https://uicookies.com/"
+									target="_blank">uicookies.com</a> Demo Images: Unsplash.com &amp; Pexels.com</small>
+						</p>
+					</div>
 				</div>
-				<div class="col-md-5 col-md-push-1 animate-box">
-					
+		</body>
 
-				</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-	<!-- jQuery -->
-	<script src="/resources/js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="/resources/js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="/resources/js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="/resources/js/jquery.waypoints.min.js"></script>
-	<!-- Carousel -->
-	<script src="/resources/js/owl.carousel.min.js"></script>
-	<!-- countTo -->
-	<script src="/resources/js/jquery.countTo.js"></script>
-
-	<!-- Stellar Parallax -->
-	<script src="/resources/js/jquery.stellar.min.js"></script>
-
-	<!-- Magnific Popup -->
-	<script src="/resources/js/jquery.magnific-popup.min.js"></script>
-	<script src="/resources/js/magnific-popup-options.js"></script>
-	
-	<script src="/resources/js/moment.min.js"></script>
-	<script src="/resources/js/bootstrap-datetimepicker.min.js"></script>
-
-
-	<!-- Main -->
-	<script src="/resources/js/main.js"></script>  
-
-	</body>
-</html>
-
+		</html>

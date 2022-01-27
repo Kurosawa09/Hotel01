@@ -1,258 +1,125 @@
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" %>
+  <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
-<html lang="kr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>uiCookies:Atlantis &mdash; Free Bootstrap Theme, Free Responsive Bootstrap Website Template</title>
-    <meta name="description" content="Free Bootstrap Theme by uicookies.com">
-    <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
-    
-    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:300,400,700|Rubik:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="/resources/css/styles-merged.css">
-    <link rel="stylesheet" href="/resources/css/style.min.css">
-    <link rel="stylesheet" href="css/custom.css">
-  </head>
-  <body>
+    <!DOCTYPE html>
+    <html lang="kr">
 
-  <!-- START: header -->
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>예약</title>
+      <meta name="description" content="Free Bootstrap Theme by uicookies.com">
+      <meta name="keywords"
+        content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
 
-  <header role="banner" class="probootstrap-header">
-    <!-- <div class="container"> -->
-    <div class="row">
-        <a href="index.html" class="probootstrap-logo visible-xs"><img src="img/logo_sm.png" class="hires" width="120" height="33" alt="Free Bootstrap Template by uicookies.com"></a>
-        
-        <a href="#" class="probootstrap-burger-menu visible-xs"><i>Menu</i></a>
-        <div class="mobile-menu-overlay"></div>
+      <link href="https://fonts.googleapis.com/css?family=Crimson+Text:300,400,700|Rubik:300,400,700,900"
+        rel="stylesheet">
+      <link rel="stylesheet" href="/resources/css/styles-merged.css">
+      <link rel="stylesheet" href="/resources/css/style.min.css">
+      <script src="/resources/js/custom/booking.js"></script>
 
-        <nav role="navigation" class="probootstrap-nav hidden-xs">
-          <ul class="probootstrap-main-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="rooms.html">Our Rooms</a></li>
-            <li class="hidden-xs probootstrap-logo-center"><a href="index.html"><img src="img/logo_md.png" class="hires" width="181" height="50" alt="Free Bootstrap Template by uicookies.com"></a></li>
-            <li class="active"><a href="reservation.html">Reservation</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
+    </head>
+
+    <body>
+      <%@ include file="/WEB-INF/views/menuBar/bookingMenuBar.jsp" %>
+
+        <section class="probootstrap-slider flexslider probootstrap-inner">
+          <ul class="slides">
+            <li style="background-image: url(/resources/img/check_in.png);" class="overlay">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-10 col-md-offset-1">
+                    <div class="probootstrap-slider-text text-center">
+                      <h1 class="probootstrap-heading probootstrap-animate">객실 예약</h1>
+                      <div class="probootstrap-animate probootstrap-sub-wrap">여행의 모든 순간이 특별한 감동으로 다가옵니다.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
           </ul>
-          <div class="extra-text visible-xs">
-            <a href="#" class="probootstrap-burger-menu"><i>Menu</i></a>
-            <h5>Connect With Us</h5>
-            <ul class="social-buttons">
-              <li><a href="#"><i class="icon-twitter"></i></a></li>
-              <li><a href="#"><i class="icon-facebook2"></i></a></li>
-              <li><a href="#"><i class="icon-instagram2"></i></a></li>
-            </ul>
-          </div>
-        </nav>
-        </div>
-    <!-- </div> -->
-  </header>
-  <!-- END: header -->
+        </section>
 
-  <section class="probootstrap-slider flexslider probootstrap-inner">
-    <ul class="slides">
-       <li style="background-image: url(img/slider_1.jpg);" class="overlay">
+        <section class="probootstrap-section">
           <div class="container">
-            <div class="row">
-              <div class="col-md-10 col-md-offset-1">
-                <div class="probootstrap-slider-text text-center">
-                  <p><img src="img/curve_white.svg" class="seperator probootstrap-animate" alt="Free HTML5 Bootstrap Template"></p>
-                  <h1 class="probootstrap-heading probootstrap-animate">Book A Room</h1>
-                  <div class="probootstrap-animate probootstrap-sub-wrap">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-    </ul>
-  </section>
-  
-  <section class="probootstrap-section">
-    <div class="container">
-      <div class="row probootstrap-gutter40">
-        <div class="col-md-8">
-          <h2 class="mt0">Reservation Form</h2>
-          <form action="/booking/booking" method="post" class="probootstrap-form">
-            <div class="form-group">
-              <label for="room">Room</label>
-              <div class="form-field">
-                <i class="icon icon-chevron-down"></i>
-                <select name="roomType" id="room" class="form-control">
-                  <option value="">Select a Room</option>
-                  <option value="single">Classic Room</option>
-                  <option value="2">Ultra Superior Room</option>
-                  <option value="3">Grand Deluxe Room</option>
-                </select>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label for="date-arrival">Arrival</label>
-                  <div class="form-field">
-                    <i class="icon icon-calendar2"></i>
-                    <input type="text" class="form-control" id="date-arrival" name="bookingStart">
+            <div class="row probootstrap-gutter40">
+              <div class="col-md-8">
+                <h2 class="mt0">예약하기</h2>
+                <form action="/booking/roomBooking" name="bookingForm" method="post" class="probootstrap-form"
+                  onsubmit="return formChk();">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="date-arrival">체크인</label>
+                        <div class="form-field">
+                          <i class="icon icon-calendar2"></i>
+                          <input type="text" class="form-control" id="date-arrival" name="bookingStart"
+                            id="bookingStart">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="date-departure">체크아웃</label>
+                        <div class="form-field">
+                          <i class="icon icon-calendar2"></i>
+                          <input type="text" class="form-control" id="date-departure" name="bookingEnd" id="bookingEnd">
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label for="date-departure">Departure</label>
-                  <div class="form-field">
-                    <i class="icon icon-calendar2"></i>
-                    <input type="text" class="form-control" id="date-departure" name="bookingEnd">
-                  </div>
-                </div>
-              </div>
-            </div>
 
-            <div class="row mb30">
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label for="adults">Adults</label>
-                  <div class="form-field">
-                    <i class="icon icon-chevron-down"></i>
-                    <select name="adult" id="adults" class="form-control">
-                      <option value="">Number of Adults</option>
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4+</option>
-                    </select>
+                  <div class="row mb30">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="adults">어른</label>
+                        <div class="form-field">
+                          <i class="icon icon-chevron-down"></i>
+                          <select name="adult" id="adult" id="adults" class="form-control">
+                            <option value="">Number of Adults</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4+</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="children">어린이</label>
+                        <div class="form-field">
+                          <i class="icon icon-chevron-down"></i>
+                          <select name="child" id="child" class="form-control">
+                            <option value="">Number of Children</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4+</option>
+                          </select>
+                        </div>
+
+                      </div>
+                    </div>
                   </div>
-                </div>
+                  <div style="text-align: center;" class="form-group">
+                    <input type="submit" class="btn btn-primary" value="예약하기">
+                  </div>
+                </form>
               </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label for="children">Children</label>
-                  <div class="form-field">
-                    <i class="icon icon-chevron-down"></i>
-                    <select name="child" id="children" class="form-control">
-                      <option value="">Number of Children</option>
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4+</option>
-                    </select>
-                  </div>
-                  
-                </div>
+              <div class="col-md-4">
+                <h2 class="mt0">후기</h2>
+                <p>여러분의 호텔 문라이트의 경험은 어떠셨나요?<br>여러분의 경험을 다른 분들과 공유해 주세요.<br>그리고 다른 사람의 경험을 받아보세요.</p>
+                <p><a href="/question/questionListWrite" class="btn btn-primary" role="button">글 작성하기</a></p>
               </div>
             </div>
-            <div class="form-group">
-              <input type="submit" class="btn btn-primary btn-lg" id="submit" name="submit" value="Reserve">
-            </div>
-          </form>
-        </div>
-        <div class="col-md-4">
-          <h2 class="mt0">Feedback</h2>
-          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-          <p><a href="#" class="btn btn-primary" role="button">Send Message</a></p>
-        </div>
-      </div>
-    </div>
-  </section>
+          </div>
+        </section>
 
-  <section class="probootstrap-half">
-    <div class="image" style="background-image: url(img/slider_2.jpg);"></div>
-    <div class="text">
-      <div class="probootstrap-animate fadeInUp probootstrap-animated">
-        <h2 class="mt0">Best 5 Star hotel</h2>
-        <p><img src="img/curve_white.svg" class="seperator" alt="Free HTML5 Bootstrap Template"></p>
-        <div class="row">
-          <div class="col-md-6">
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>    
-          </div>
-          <div class="col-md-6">
-            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>    
-          </div>
-        </div>
-        <p><a href="#" class="link-with-icon white">Learn More <i class=" icon-chevron-right"></i></a></p>
-      </div>
-    </div>
-  </section>
+        <script src="/resources/js/scripts.min.js"></script>
+        <script src="/resources/js/main.min.js"></script>
+        <script src="/resources/js/custom.js"></script>
 
-  <!-- START: footer -->
-  <footer role="contentinfo" class="probootstrap-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="probootstrap-footer-widget">
-            <p class="mt40"><img src="img/logo_sm.png" class="hires" width="120" height="33" alt="Free HTML5 Bootstrap Template by uicookies.com"></p>
-            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-            <p><a href="#" class="link-with-icon">Learn More <i class=" icon-chevron-right"></i></a></p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="probootstrap-footer-widget">
-            <h3>Blog</h3>
-            <ul class="probootstrap-blog-list">
-              <li>
-                <a href="#">
-                  <figure class="probootstrap-image"><img src="img/img_1.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></figure>
-                  <div class="probootstrap-text">
-                    <h4>River named Duden flows</h4>
-                    <span class="meta">August 2, 2017</span>
-                    <p>A small river named Duden flows by their place</p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <figure class="probootstrap-image"><img src="img/img_2.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></figure>
-                  <div class="probootstrap-text">
-                    <h4>River named Duden flows</h4>
-                    <span class="meta">August 2, 2017</span>
-                    <p>A small river named Duden flows by their place</p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <figure class="probootstrap-image"><img src="img/img_3.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></figure>
-                  <div class="probootstrap-text">
-                    <h4>River named Duden flows</h4>
-                    <span class="meta">August 2, 2017</span>
-                    <p>A small river named Duden flows by their place</p>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="probootstrap-footer-widget">
-            <h3>Contact</h3>
-            <ul class="probootstrap-contact-info">
-              <li><i class="icon-location2"></i> <span>198 West 21th Street, Suite 721 New York NY 10016</span></li>
-              <li><i class="icon-mail"></i><span>info@domain.com</span></li>
-              <li><i class="icon-phone2"></i><span>+123 456 7890</span></li>
-            </ul>
-            
-          </div>
-        </div>
-      </div>
-      <div class="row mt40">
-        <div class="col-md-12 text-center">
-          <ul class="probootstrap-footer-social">
-            <li><a href=""><i class="icon-twitter"></i></a></li>
-            <li><a href=""><i class="icon-facebook"></i></a></li>
-            <li><a href=""><i class="icon-instagram2"></i></a></li>
-          </ul>
-          <p>
-            <small>&copy; 2017 <a href="https://uicookies.com/" target="_blank">uiCookies:Atlantis</a>. All Rights Reserved. <br> Designed &amp; Developed by <a href="https://uicookies.com/" target="_blank">uicookies.com</a> Demo Images: Unsplash.com &amp; Pexels.com</small>
-          </p>
-          
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!-- END: footer -->
-  
-  <script src="/resources/js/scripts.min.js"></script>
-  <script src="/resources/js/main.min.js"></script>
-  <script src="/resources/js/custom.js"></script>
+    </body>
 
-  </body>
-</html>
+    </html>

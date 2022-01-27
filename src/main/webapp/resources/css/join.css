@@ -1,25 +1,11 @@
-@charset "UTF-8";
-*{
-  margin: 0px;
-  padding: 0px;
-  text-decoration: none;
-  font-family:sans-serif;
-
-}
-
-body 
-{
-  background-color: #F0FF61;
-}
-
 .loginForm {
   position:absolute;
-  width:600px;
-  height:500px;
+  width:500px;
+  height:380px;
   padding: 30px, 20px;
   background-color:#FFFFFF;
   text-align:center;
-  top:50%;
+  top:45%;
   left:50%;
   transform: translate(-50%,-50%);
   border-radius: 15px;
@@ -27,17 +13,14 @@ body
 
 .loginForm h2{
   text-align: center;
-  margin: 30px;
+  margin: 0px;
 }
 
-.idForm
-{
+.idForm{
   border-bottom: 2px solid #adadad;
   margin: 30px;
   padding: 10px 10px;
-  
 }
-
 
 .passForm{
   border-bottom: 2px solid #adadad;
@@ -65,7 +48,7 @@ body
   background: none;
 }
 
-.pwChk {
+.pwchk {
   width: 100%;
   border:none;
   outline:none;
@@ -84,7 +67,6 @@ body
   height:25px;
   background: none;
 }
-
 .tel {
   width: 100%;
   border:none;
@@ -105,37 +87,26 @@ body
   background: none;
 }
 
-
 .btn {
-  position:relative;
   left:40%;
-  transform: translateX(-50%);
-  margin-bottom: 60px;
-  margin : 30px;
+  margin-bottom: 40px;
   width:80%;
   height:40px;
+  background: linear-gradient(125deg,#81ecec,#6c5ce7,#81ecec);
   background-position: left;
   background-size: 200%;
-  color:black;
+  color:white;
   font-weight: bold;
   border:none;
   cursor:pointer;
   transition: 0.4s;
   display:inline;
-  text-align:center;
-  padding: 20px 20px;
-  background-color: lightgrey;
 }
 
-.btn:hover 
-{
+.btn:hover {
   background-position: right;
 }
 
-.bottomText 
-{
-  background-color:#FFFFFF;
-  text-align:center;
-  margin: 30px;
-  padding: 10px 10px;
+.bottomText {
+  text-align: center;
 }
