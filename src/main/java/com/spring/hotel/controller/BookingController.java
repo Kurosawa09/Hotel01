@@ -1,9 +1,5 @@
 package com.spring.hotel.controller;
-
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 
 import javax.servlet.http.HttpSession;
 
@@ -12,12 +8,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.spring.hotel.service.BookingService;
 import com.spring.hotel.vo.BookingVO;
@@ -28,13 +20,13 @@ import com.spring.hotel.vo.RoomVO;
 public class BookingController {
 
 	private static final Logger logger = LoggerFactory.getLogger(BookingController.class);
-
+	// 뭔가를 수정했어요
 	@Autowired
 	private BookingService service;
 
 	@RequestMapping(value = "/booking", method = RequestMethod.GET)
 	public String booking() {
-		logger.info("booking 메소드 실행(GET)");
+		logger.info("booking 메소드 실행(GET)ㅋㅋㅋㅋ");
 
 		return "booking/booking";
 	}
